@@ -1,0 +1,134 @@
+<?php
+/**
+ * @file
+ * amphome_str.box.inc
+ */
+
+/**
+ * Implements hook_default_box().
+ */
+function amphome_str_default_box() {
+  $export = array();
+
+  $box = new stdClass();
+  $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
+  $box->api_version = 1;
+  $box->delta = 'amp_donate';
+  $box->plugin_key = 'simple';
+  $box->title = 'Donate';
+  $box->description = 'donate prompt';
+  $box->options = array(
+    'body' => array(
+      'value' => '<p><a href="https://app.moonclerk.com/pay/6cstgbo9tj">BECOME A SUSTAINER!</a></p>',
+      'format' => 'really_really_unfiltered',
+    ),
+  );
+  $export['amp_donate'] = $box;
+
+  $box = new stdClass();
+  $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
+  $box->api_version = 1;
+  $box->delta = 'amp_list_signup';
+  $box->plugin_key = 'simple';
+  $box->title = 'Subscribe to our newsletter';
+  $box->description = 'Newsletter signup';
+  $box->options = array(
+    'body' => array(
+      'value' => '<div id="mc_embed_signup">
+<form action="http://alliedmedia.us7.list-manage2.com/subscribe/post?u=ed3193a97f901cbe49364e914&amp;id=e5f6bfebe1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+<input type="email" value="" name="EMAIL" placeholder="email" id="mce-EMAIL">
+<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+<br>
+<input type="checkbox" value="1" name="group[8717][1]" id="mce-group[8717]-8717-0"><label class="mc-group" for="mce-group[8717]-8717-0">Detroit list</label>
+
+<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+<div style="position: absolute; left: -5000px;"><input type="text" name="b_ed3193a97f901cbe49364e914_e5f6bfebe1" value=""></div>
+</form>
+',
+      'format' => 'really_really_unfiltered',
+    ),
+    'additional_classes' => 'small-box',
+  );
+  $export['amp_list_signup'] = $box;
+
+  $box = new stdClass();
+  $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
+  $box->api_version = 1;
+  $box->delta = 'contact_quick_links';
+  $box->plugin_key = 'simple';
+  $box->title = '';
+  $box->description = 'Contact Quick Links';
+  $box->options = array(
+    'body' => array(
+      'value' => '<a href="http://amc.alliedmedia.org/amc2012/about/frequently-asked-questions">Read some FAQs about the Allied Media Conference</a>.
+
+Contact us through the form or leave us a voicemail at: (313) 718-2267 
+
+You can send postal mail, checks, and gifts (we like small, original works of art and books of history) to:
+
+<b>Allied Media Projects
+4126 Third St.
+Detroit, MI 48201</b>
+
+Your contribution to Allied Media Projects is tax-deductible!
+
+<p><b>You can also donate online here...</b></p>
+<a class="donate-button" href="https://app.moonclerk.com/pay/6cstgbo9tj">DONATE</a>',
+      'format' => 'unfiltered',
+    ),
+  );
+  $export['contact_quick_links'] = $box;
+
+  $box = new stdClass();
+  $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
+  $box->api_version = 1;
+  $box->delta = 'follow_facebook';
+  $box->plugin_key = 'simple';
+  $box->title = '';
+  $box->description = 'Like on Facebook';
+  $box->options = array(
+    'body' => array(
+      'value' => '<a href="http://www.facebook.com/pages/Allied-Media-Projects/123987404279617" target="blank">Like us on Facebook</a>',
+      'format' => 'unfiltered',
+    ),
+    'additional_classes' => 'small-box',
+  );
+  $export['follow_facebook'] = $box;
+
+  $box = new stdClass();
+  $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
+  $box->api_version = 1;
+  $box->delta = 'follow_twitter';
+  $box->plugin_key = 'simple';
+  $box->title = '';
+  $box->description = 'Follow on Tumblr';
+  $box->options = array(
+    'body' => array(
+      'value' => '<a href="http://alliedmedia.tumblr.com/" target="blank">Follow us on Tumblr</a>
+',
+      'format' => 'unfiltered',
+    ),
+    'additional_classes' => 'small-box',
+  );
+  $export['follow_twitter'] = $box;
+
+  $box = new stdClass();
+  $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
+  $box->api_version = 1;
+  $box->delta = 'register_conference';
+  $box->plugin_key = 'simple';
+  $box->title = '';
+  $box->description = 'Follow on Twitter';
+  $box->options = array(
+    'body' => array(
+      'value' => '<a href="http://twitter.com/allied_media" target="blank">Follow us on Twitter</a>
+',
+      'format' => 'unfiltered',
+    ),
+    'additional_classes' => 'small-box',
+  );
+  $export['register_conference'] = $box;
+
+  return $export;
+}

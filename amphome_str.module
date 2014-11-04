@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the amphome feature.
+ */
+
+include_once 'amphome_str.features.inc';
