@@ -13,6 +13,21 @@ function amphome_str_default_box() {
   $box = new stdClass();
   $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
   $box->api_version = 1;
+  $box->delta = 'amc_box';
+  $box->plugin_key = 'simple';
+  $box->title = 'Allied Media Conference';
+  $box->description = 'Allied Media Conference';
+  $box->options = array(
+    'body' => array(
+      'value' => 'To be determined.',
+      'format' => 'unfiltered',
+    ),
+  );
+  $export['amc_box'] = $box;
+
+  $box = new stdClass();
+  $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
+  $box->api_version = 1;
   $box->delta = 'amp_donate';
   $box->plugin_key = 'simple';
   $box->title = 'Donate';
@@ -83,6 +98,21 @@ Your contribution to Allied Media Projects is tax-deductible!
   $box = new stdClass();
   $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
   $box->api_version = 1;
+  $box->delta = 'flex_graphic_box';
+  $box->plugin_key = 'simple';
+  $box->title = 'Flexible graphic area';
+  $box->description = 'Flexible graphic area';
+  $box->options = array(
+    'body' => array(
+      'value' => 'hi',
+      'format' => 'unfiltered',
+    ),
+  );
+  $export['flex_graphic_box'] = $box;
+
+  $box = new stdClass();
+  $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
+  $box->api_version = 1;
   $box->delta = 'follow_facebook';
   $box->plugin_key = 'simple';
   $box->title = '';
@@ -129,6 +159,66 @@ Your contribution to Allied Media Projects is tax-deductible!
     'additional_classes' => 'small-box',
   );
   $export['register_conference'] = $box;
+
+  $box = new stdClass();
+  $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
+  $box->api_version = 1;
+  $box->delta = 'sponsored_projects_box';
+  $box->plugin_key = 'simple';
+  $box->title = 'Sponsored projects';
+  $box->description = 'Sponsored projects';
+  $box->options = array(
+    'body' => array(
+      'value' => 'to be filled in',
+      'format' => 'unfiltered',
+    ),
+  );
+  $export['sponsored_projects_box'] = $box;
+
+  $box = new stdClass();
+  $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
+  $box->api_version = 1;
+  $box->delta = 'storeitem1_box';
+  $box->plugin_key = 'simple';
+  $box->title = 'Store item 1';
+  $box->description = 'Store item 1';
+  $box->options = array(
+    'body' => array(
+      'value' => 'hi1',
+      'format' => 'unfiltered',
+    ),
+  );
+  $export['storeitem1_box'] = $box;
+
+  $box = new stdClass();
+  $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
+  $box->api_version = 1;
+  $box->delta = 'storeitem2_box';
+  $box->plugin_key = 'simple';
+  $box->title = 'Store Item 2';
+  $box->description = 'Store Item 2';
+  $box->options = array(
+    'body' => array(
+      'value' => 'hi11',
+      'format' => 'unfiltered',
+    ),
+  );
+  $export['storeitem2_box'] = $box;
+
+  $box = new stdClass();
+  $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
+  $box->api_version = 1;
+  $box->delta = 'storeitem3_box';
+  $box->plugin_key = 'simple';
+  $box->title = 'hi item 3';
+  $box->description = 'Store Item 3';
+  $box->options = array(
+    'body' => array(
+      'value' => 'hi',
+      'format' => 'unfiltered',
+    ),
+  );
+  $export['storeitem3_box'] = $box;
 
   return $export;
 }
