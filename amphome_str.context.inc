@@ -280,6 +280,24 @@ function amphome_str_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'boxes-mission' => array(
+          'module' => 'boxes',
+          'delta' => 'mission',
+          'region' => 'header',
+          'weight' => '-10',
+        ),
+        'boxes-sell_links' => array(
+          'module' => 'boxes',
+          'delta' => 'sell_links',
+          'region' => 'header',
+          'weight' => '-9',
+        ),
+        'search-form' => array(
+          'module' => 'search',
+          'delta' => 'form',
+          'region' => 'header',
+          'weight' => '-8',
+        ),
         'boxes-amp_list_signup' => array(
           'module' => 'boxes',
           'delta' => 'amp_list_signup',
@@ -306,8 +324,14 @@ function amphome_str_context_default_contexts() {
         ),
         'menu_block-1' => array(
           'module' => 'menu_block',
-          'delta' => 1,
+          'delta' => '1',
           'region' => 'sidebar_second',
+          'weight' => '-10',
+        ),
+        'boxes-impressum' => array(
+          'module' => 'boxes',
+          'delta' => 'impressum',
+          'region' => 'footer',
           'weight' => '-10',
         ),
       ),
