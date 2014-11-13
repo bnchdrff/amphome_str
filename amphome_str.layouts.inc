@@ -44,8 +44,8 @@ function amphome_str_default_panels_layout() {
         'type' => 'column',
         'contains' => 'row',
         'bootstrap_class' => array(
-          'xs' => 'col-xs-9',
-          'sm' => 'col-sm-9',
+          'xs' => 'col-xs-12   col-xs-12   col-xs-4   col-xs-4   col-xs-4',
+          'sm' => 'col-sm-12   col-sm-12   col-sm-4   col-sm-4   col-sm-4',
           'md' => 'col-md-9',
           'lg' => 'col-lg-9',
         ),
@@ -81,8 +81,8 @@ function amphome_str_default_panels_layout() {
         'class' => '',
         'contains' => 'region',
         'bootstrap_class' => array(
-          'xs' => 'col-xs-6',
-          'sm' => 'col-sm-6',
+          'xs' => 'col-xs-12',
+          'sm' => 'col-sm-12',
           'md' => 'col-md-6',
           'lg' => 'col-lg-6',
         ),
@@ -98,7 +98,7 @@ function amphome_str_default_panels_layout() {
         'class' => '',
         'contains' => 'region',
         'bootstrap_class' => array(
-          'sm' => 'col-sm-6',
+          'sm' => 'col-sm-12',
           'md' => 'col-md-6',
           'lg' => 'col-lg-6',
         ),
@@ -134,8 +134,8 @@ function amphome_str_default_panels_layout() {
         'class' => '',
         'contains' => 'region',
         'bootstrap_class' => array(
-          'xs' => 'col-xs-3',
-          'sm' => 'col-sm-3',
+          'xs' => 'col-xs-12',
+          'sm' => 'col-sm-12',
           'md' => 'col-md-3',
           'lg' => 'col-lg-3',
         ),
