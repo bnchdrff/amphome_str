@@ -103,6 +103,24 @@ function amphome_str_menu_default_menu_links() {
     'customized' => 1,
     'parent_identifier' => 'main-menu_attend:node/751',
   );
+  // Exported menu link: main-menu_accomplishments:node/740
+  $menu_links['main-menu_accomplishments:node/740'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/740',
+    'router_path' => 'node/%',
+    'link_title' => 'Accomplishments',
+    'options' => array(
+      'identifier' => 'main-menu_accomplishments:node/740',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 0,
+    'parent_identifier' => 'main-menu_detroit-future-schools:node/738',
+  );
   // Exported menu link: main-menu_allied-media-conference:node/743
   $menu_links['main-menu_allied-media-conference:node/743'] = array(
     'menu_name' => 'main-menu',
@@ -214,6 +232,24 @@ function amphome_str_menu_default_menu_links() {
     'weight' => -45,
     'customized' => 1,
   );
+  // Exported menu link: main-menu_contact:node/768
+  $menu_links['main-menu_contact:node/768'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/768',
+    'router_path' => 'node/%',
+    'link_title' => 'Contact',
+    'options' => array(
+      'identifier' => 'main-menu_contact:node/768',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 0,
+    'parent_identifier' => 'main-menu_detroit-future-schools:node/738',
+  );
   // Exported menu link: main-menu_delegations:node/734
   $menu_links['main-menu_delegations:node/734'] = array(
     'menu_name' => 'main-menu',
@@ -231,6 +267,42 @@ function amphome_str_menu_default_menu_links() {
     'weight' => -48,
     'customized' => 1,
     'parent_identifier' => 'main-menu_participate:node/749',
+  );
+  // Exported menu link: main-menu_detroit-future-schools:node/738
+  $menu_links['main-menu_detroit-future-schools:node/738'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/738',
+    'router_path' => 'node/%',
+    'link_title' => 'Detroit Future Schools',
+    'options' => array(
+      'identifier' => 'main-menu_detroit-future-schools:node/738',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 1,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 0,
+    'parent_identifier' => 'main-menu_sponsored-projects:node/737',
+  );
+  // Exported menu link: main-menu_donate:node/741
+  $menu_links['main-menu_donate:node/741'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/741',
+    'router_path' => 'node/%',
+    'link_title' => 'Donate',
+    'options' => array(
+      'identifier' => 'main-menu_donate:node/741',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 0,
+    'parent_identifier' => 'main-menu_detroit-future-schools:node/738',
   );
   // Exported menu link: main-menu_funding--financials:node/412
   $menu_links['main-menu_funding--financials:node/412'] = array(
@@ -357,6 +429,25 @@ function amphome_str_menu_default_menu_links() {
     'weight' => -48,
     'customized' => 1,
     'parent_identifier' => 'main-menu_program:node/732',
+  );
+  // Exported menu link: main-menu_overview:node/743
+  $menu_links['main-menu_overview:node/743'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/743',
+    'router_path' => 'node/%',
+    'link_title' => 'Overview',
+    'options' => array(
+      'attributes' => array(),
+      'identifier' => 'main-menu_overview:node/743',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -50,
+    'customized' => 1,
+    'parent_identifier' => 'main-menu_allied-media-conference:node/743',
   );
   // Exported menu link: main-menu_participate:node/749
   $menu_links['main-menu_participate:node/749'] = array(
@@ -582,16 +673,36 @@ function amphome_str_menu_default_menu_links() {
     'router_path' => 'node/%',
     'link_title' => 'Sponsored Projects',
     'options' => array(
-      'attributes' => array(),
+      'attributes' => array(
+        'title' => '',
+      ),
       'identifier' => 'main-menu_sponsored-projects:node/737',
     ),
     'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
-    'has_children' => 0,
-    'expanded' => 1,
+    'has_children' => 1,
+    'expanded' => 0,
     'weight' => -49,
     'customized' => 1,
+  );
+  // Exported menu link: main-menu_staff:node/739
+  $menu_links['main-menu_staff:node/739'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/739',
+    'router_path' => 'node/%',
+    'link_title' => 'Staff',
+    'options' => array(
+      'identifier' => 'main-menu_staff:node/739',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 0,
+    'parent_identifier' => 'main-menu_detroit-future-schools:node/738',
   );
   // Exported menu link: main-menu_table:node/755
   $menu_links['main-menu_table:node/755'] = array(
@@ -671,6 +782,7 @@ function amphome_str_menu_default_menu_links() {
   t(2014);
   t('About');
   t('Accessibility');
+  t('Accomplishments');
   t('Allied Media Conference');
   t('Attend');
   t('Blog');
@@ -678,6 +790,8 @@ function amphome_str_menu_default_menu_links() {
   t('Conference Mission');
   t('Contact');
   t('Delegations');
+  t('Detroit Future Schools');
+  t('Donate');
   t('Funding & Financials');
   t('Fundraise');
   t('Glossary');
@@ -685,6 +799,7 @@ function amphome_str_menu_default_menu_links() {
   t('Maps & Transportation');
   t('Mission & Principles');
   t('Music');
+  t('Overview');
   t('Participate');
   t('People');
   t('Places to Eat');
@@ -698,6 +813,7 @@ function amphome_str_menu_default_menu_links() {
   t('Sessions');
   t('Sponsor');
   t('Sponsored Projects');
+  t('Staff');
   t('Table');
   t('Tools & Resources');
   t('Tracks, Practice Spaces, Network Gatherings');
