@@ -146,6 +146,38 @@ Your contribution to Allied Media Projects is tax-deductible!
   $box = new stdClass();
   $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
   $box->api_version = 1;
+  $box->delta = 'impressum';
+  $box->plugin_key = 'simple';
+  $box->title = '';
+  $box->description = 'Impressum';
+  $box->options = array(
+    'body' => array(
+      'value' => 'Allied Media Projects
+4126 Third St.
+Detroit, MI 48201',
+      'format' => 'unfiltered',
+    ),
+  );
+  $export['impressum'] = $box;
+
+  $box = new stdClass();
+  $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
+  $box->api_version = 1;
+  $box->delta = 'mission';
+  $box->plugin_key = 'simple';
+  $box->title = '';
+  $box->description = 'Mission statement';
+  $box->options = array(
+    'body' => array(
+      'value' => 'We cultivate media strategies for a more just, creative, and collaborative world.',
+      'format' => 'unfiltered',
+    ),
+  );
+  $export['mission'] = $box;
+
+  $box = new stdClass();
+  $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
+  $box->api_version = 1;
   $box->delta = 'register_conference';
   $box->plugin_key = 'simple';
   $box->title = '';
@@ -159,6 +191,21 @@ Your contribution to Allied Media Projects is tax-deductible!
     'additional_classes' => 'small-box',
   );
   $export['register_conference'] = $box;
+
+  $box = new stdClass();
+  $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
+  $box->api_version = 1;
+  $box->delta = 'sell_links';
+  $box->plugin_key = 'simple';
+  $box->title = '';
+  $box->description = 'Sell links (store, become sustainer)';
+  $box->options = array(
+    'body' => array(
+      'value' => '<a href="http://store.alliedmedia.org/">Store</a>&nbsp;&nbsp;<a href="https://app.moonclerk.com/pay/6cstgbo9tj">Become a sustainer</a>',
+      'format' => 'unfiltered',
+    ),
+  );
+  $export['sell_links'] = $box;
 
   $box = new stdClass();
   $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */

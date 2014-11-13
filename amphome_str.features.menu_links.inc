@@ -131,6 +131,9 @@ function amphome_str_menu_default_menu_links() {
     'link_title' => 'Attend',
     'options' => array(
       'identifier' => 'main-menu_attend:node/751',
+      'attributes' => array(
+        'title' => '',
+      ),
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -365,7 +368,9 @@ function amphome_str_menu_default_menu_links() {
     'router_path' => 'node/%',
     'link_title' => 'Participate',
     'options' => array(
-      'attributes' => array(),
+      'attributes' => array(
+        'title' => '',
+      ),
       'identifier' => 'main-menu_participate:node/749',
     ),
     'module' => 'menu',
@@ -439,6 +444,9 @@ function amphome_str_menu_default_menu_links() {
     'link_title' => 'Previous Years',
     'options' => array(
       'identifier' => 'main-menu_previous-years:node/736',
+      'attributes' => array(
+        'title' => '',
+      ),
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -457,6 +465,9 @@ function amphome_str_menu_default_menu_links() {
     'link_title' => 'Program',
     'options' => array(
       'identifier' => 'main-menu_program:node/732',
+      'attributes' => array(
+        'title' => '',
+      ),
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -511,6 +522,9 @@ function amphome_str_menu_default_menu_links() {
     'link_title' => 'Register',
     'options' => array(
       'identifier' => 'main-menu_register:node/750',
+      'attributes' => array(
+        'title' => '',
+      ),
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -529,12 +543,15 @@ function amphome_str_menu_default_menu_links() {
     'link_title' => 'Reports',
     'options' => array(
       'identifier' => 'main-menu_reports:node/746',
+      'attributes' => array(
+        'title' => '',
+      ),
     ),
     'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
     'has_children' => 0,
-    'expanded' => 0,
+    'expanded' => 1,
     'weight' => -48,
     'customized' => 1,
     'parent_identifier' => 'main-menu_about:<nolink>',
