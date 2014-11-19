@@ -8,6 +8,7 @@ dependencies[] = cck_blocks
 dependencies[] = context
 dependencies[] = ctools
 dependencies[] = date
+dependencies[] = delta_blocks
 dependencies[] = features
 dependencies[] = file
 dependencies[] = image

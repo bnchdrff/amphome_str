@@ -293,6 +293,12 @@ function amphome_str_context_default_contexts() {
           'region' => 'footer',
           'weight' => '-10',
         ),
+        'delta_blocks-site-name' => array(
+          'module' => 'delta_blocks',
+          'delta' => 'site-name',
+          'region' => 'footer',
+          'weight' => '-9',
+        ),
       ),
     ),
   );
