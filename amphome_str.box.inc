@@ -46,16 +46,17 @@ function amphome_str_default_box() {
   $box->delta = 'amp_list_signup';
   $box->plugin_key = 'simple';
   $box->title = 'Subscribe to our newsletter';
-  $box->description = 'Newsletter signup';
+  $box->description = 'Newsletter Subscription';
   $box->options = array(
     'body' => array(
       'value' => '<div id="mc_embed_signup">
 <form action="http://alliedmedia.us7.list-manage2.com/subscribe/post?u=ed3193a97f901cbe49364e914&amp;id=e5f6bfebe1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 
 <input type="email" value="" name="EMAIL" placeholder="email" id="mce-EMAIL">
-<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
 <br>
-<input type="checkbox" value="1" name="group[8717][1]" id="mce-group[8717]-8717-0"><label class="mc-group" for="mce-group[8717]-8717-0">Detroit list</label>
+<input type="text" value="" name="mce-MMERGE11" placeholder="zip code" id="mce-MMERGE11">
+<br>
+<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
 
 <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 <div style="position: absolute; left: -5000px;"><input type="text" name="b_ed3193a97f901cbe49364e914_e5f6bfebe1" value=""></div>
@@ -154,9 +155,12 @@ Your contribution to Allied Media Projects is tax-deductible!
     'body' => array(
       'value' => 'Allied Media Projects
 4126 Third St.
-Detroit, MI 48201',
+Detroit, MI 48201
+
+<a href="http://amphome-2015.dev.altissima.theworkdept.com/sustain">DONATE</a>',
       'format' => 'unfiltered',
     ),
+    'additional_classes' => '',
   );
   $export['impressum'] = $box;
 
@@ -201,9 +205,10 @@ Detroit, MI 48201',
   $box->description = 'Sell links (store, become sustainer)';
   $box->options = array(
     'body' => array(
-      'value' => '<a href="http://store.alliedmedia.org/">Store</a>&nbsp;&nbsp;<a href="https://app.moonclerk.com/pay/6cstgbo9tj">Become a sustainer</a>',
+      'value' => '<a href="http://store.alliedmedia.org/">Store</a>&nbsp;&nbsp;<a href="/sustain">Become a Sustainer</a>',
       'format' => 'unfiltered',
     ),
+    'additional_classes' => '',
   );
   $export['sell_links'] = $box;
 
