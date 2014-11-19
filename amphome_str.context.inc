@@ -57,7 +57,7 @@ function amphome_str_context_default_contexts() {
         'boxes-contact_quick_links' => array(
           'module' => 'boxes',
           'delta' => 'contact_quick_links',
-          'region' => 'sidebar_first',
+          'region' => 'sidebar_second',
           'weight' => '-10',
         ),
       ),
@@ -128,24 +128,6 @@ function amphome_str_context_default_contexts() {
           'region' => 'content',
           'weight' => '-10',
         ),
-        'views-amp_news-block_2' => array(
-          'module' => 'views',
-          'delta' => 'amp_news-block_2',
-          'region' => 'sidebar_first',
-          'weight' => '-20',
-        ),
-        'views-amp_news-block_1' => array(
-          'module' => 'views',
-          'delta' => 'amp_news-block_1',
-          'region' => 'sidebar_first',
-          'weight' => '-19',
-        ),
-        'views-amp_news-block_3' => array(
-          'module' => 'views',
-          'delta' => 'amp_news-block_3',
-          'region' => 'sidebar_first',
-          'weight' => '-18',
-        ),
       ),
     ),
   );
@@ -207,24 +189,7 @@ function amphome_str_context_default_contexts() {
       ),
     ),
   );
-  $context->reactions = array(
-    'block' => array(
-      'blocks' => array(
-        'views-amp_news-block_2' => array(
-          'module' => 'views',
-          'delta' => 'amp_news-block_2',
-          'region' => 'sidebar_first',
-          'weight' => '-23',
-        ),
-        'cck_blocks-field_page_sidebar' => array(
-          'module' => 'cck_blocks',
-          'delta' => 'field_page_sidebar',
-          'region' => 'sidebar_first',
-          'weight' => '-22',
-        ),
-      ),
-    ),
-  );
+  $context->reactions = array();
   $context->condition_mode = 1;
 
   // Translatables
@@ -280,12 +245,6 @@ function amphome_str_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'boxes-mission' => array(
-          'module' => 'boxes',
-          'delta' => 'mission',
-          'region' => 'header',
-          'weight' => '-10',
-        ),
         'boxes-sell_links' => array(
           'module' => 'boxes',
           'delta' => 'sell_links',
@@ -307,26 +266,26 @@ function amphome_str_context_default_contexts() {
         'boxes-amp_list_signup' => array(
           'module' => 'boxes',
           'delta' => 'amp_list_signup',
-          'region' => 'sidebar_first',
-          'weight' => '-9',
-        ),
-        'boxes-register_conference' => array(
-          'module' => 'boxes',
-          'delta' => 'register_conference',
-          'region' => 'sidebar_first',
-          'weight' => '-8',
+          'region' => 'sidebar_second',
+          'weight' => '-10',
         ),
         'boxes-follow_facebook' => array(
           'module' => 'boxes',
           'delta' => 'follow_facebook',
-          'region' => 'sidebar_first',
-          'weight' => '-7',
+          'region' => 'sidebar_second',
+          'weight' => '-9',
         ),
         'boxes-follow_twitter' => array(
           'module' => 'boxes',
           'delta' => 'follow_twitter',
-          'region' => 'sidebar_first',
-          'weight' => '-6',
+          'region' => 'sidebar_second',
+          'weight' => '-8',
+        ),
+        'boxes-register_conference' => array(
+          'module' => 'boxes',
+          'delta' => 'register_conference',
+          'region' => 'sidebar_second',
+          'weight' => '-7',
         ),
         'boxes-impressum' => array(
           'module' => 'boxes',
