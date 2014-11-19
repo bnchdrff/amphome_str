@@ -298,6 +298,12 @@ function amphome_str_context_default_contexts() {
           'region' => 'header',
           'weight' => '-8',
         ),
+        'menu_block-1' => array(
+          'module' => 'menu_block',
+          'delta' => '1',
+          'region' => 'content',
+          'weight' => '-10',
+        ),
         'boxes-amp_list_signup' => array(
           'module' => 'boxes',
           'delta' => 'amp_list_signup',
@@ -321,12 +327,6 @@ function amphome_str_context_default_contexts() {
           'delta' => 'follow_twitter',
           'region' => 'sidebar_first',
           'weight' => '-6',
-        ),
-        'menu_block-1' => array(
-          'module' => 'menu_block',
-          'delta' => '1',
-          'region' => 'sidebar_second',
-          'weight' => '-10',
         ),
         'boxes-impressum' => array(
           'module' => 'boxes',
