@@ -232,6 +232,52 @@ function amphome_str_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
+  $context->name = 'secondarysidebar';
+  $context->description = '';
+  $context->tag = '';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        '~sponsored-projects' => '~sponsored-projects',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'boxes-amp_list_signup' => array(
+          'module' => 'boxes',
+          'delta' => 'amp_list_signup',
+          'region' => 'sidebar_second',
+          'weight' => '-10',
+        ),
+        'boxes-follow_facebook' => array(
+          'module' => 'boxes',
+          'delta' => 'follow_facebook',
+          'region' => 'sidebar_second',
+          'weight' => '-9',
+        ),
+        'boxes-follow_twitter' => array(
+          'module' => 'boxes',
+          'delta' => 'follow_twitter',
+          'region' => 'sidebar_second',
+          'weight' => '-8',
+        ),
+        'boxes-register_conference' => array(
+          'module' => 'boxes',
+          'delta' => 'register_conference',
+          'region' => 'sidebar_second',
+          'weight' => '-7',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+  $export['secondarysidebar'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
   $context->name = 'sitewide';
   $context->description = '';
   $context->tag = '';
@@ -262,30 +308,6 @@ function amphome_str_context_default_contexts() {
           'delta' => '1',
           'region' => 'content',
           'weight' => '-10',
-        ),
-        'boxes-amp_list_signup' => array(
-          'module' => 'boxes',
-          'delta' => 'amp_list_signup',
-          'region' => 'sidebar_second',
-          'weight' => '-10',
-        ),
-        'boxes-follow_facebook' => array(
-          'module' => 'boxes',
-          'delta' => 'follow_facebook',
-          'region' => 'sidebar_second',
-          'weight' => '-9',
-        ),
-        'boxes-follow_twitter' => array(
-          'module' => 'boxes',
-          'delta' => 'follow_twitter',
-          'region' => 'sidebar_second',
-          'weight' => '-8',
-        ),
-        'boxes-register_conference' => array(
-          'module' => 'boxes',
-          'delta' => 'register_conference',
-          'region' => 'sidebar_second',
-          'weight' => '-7',
         ),
         'boxes-impressum' => array(
           'module' => 'boxes',
