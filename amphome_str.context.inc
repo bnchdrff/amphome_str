@@ -26,9 +26,9 @@ function amphome_str_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'views-amp_news-block_6' => array(
+        'views-project_news-amc' => array(
           'module' => 'views',
-          'delta' => 'amp_news-block_6',
+          'delta' => 'project_news-amc',
           'region' => 'sidebar_second',
           'weight' => '-10',
         ),
@@ -217,9 +217,9 @@ function amphome_str_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'views-amp_news-block_5' => array(
+        'views-project_news-dfs' => array(
           'module' => 'views',
-          'delta' => 'amp_news-block_5',
+          'delta' => 'project_news-dfs',
           'region' => 'sidebar_second',
           'weight' => '-10',
         ),
@@ -293,11 +293,17 @@ function amphome_str_context_default_contexts() {
           'region' => 'footer',
           'weight' => '-10',
         ),
-        'delta_blocks-site-name' => array(
-          'module' => 'delta_blocks',
-          'delta' => 'site-name',
+        'boxes-footer_donatelink' => array(
+          'module' => 'boxes',
+          'delta' => 'footer_donatelink',
           'region' => 'footer',
           'weight' => '-9',
+        ),
+        'boxes-footer_sociallinks' => array(
+          'module' => 'boxes',
+          'delta' => 'footer_sociallinks',
+          'region' => 'footer',
+          'weight' => '-8',
         ),
       ),
     ),

@@ -147,6 +147,43 @@ Your contribution to Allied Media Projects is tax-deductible!
   $box = new stdClass();
   $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
   $box->api_version = 1;
+  $box->delta = 'footer_donatelink';
+  $box->plugin_key = 'simple';
+  $box->title = '';
+  $box->description = 'Donate link for the footer';
+  $box->options = array(
+    'body' => array(
+      'value' => '<a href="/sustain">Donate</a>',
+      'format' => 'unfiltered',
+    ),
+    'additional_classes' => '',
+  );
+  $export['footer_donatelink'] = $box;
+
+  $box = new stdClass();
+  $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
+  $box->api_version = 1;
+  $box->delta = 'footer_sociallinks';
+  $box->plugin_key = 'simple';
+  $box->title = '';
+  $box->description = 'social media links for the footer';
+  $box->options = array(
+    'body' => array(
+      'value' => '<a href="" class="facebook">Facebook</a>
+<a href="" class="twitter">Twitter</a>
+<a href="" class="tumblr">Tumblr</a>
+<a href="" class="youtube">Youtube</a>
+<a href="" class="vimeo">Vimeo</a>
+<a href="" class="flickr">Flickr</a>
+<a href="" class="instagram">Instagram</a>',
+      'format' => 'really_really_unfiltered',
+    ),
+  );
+  $export['footer_sociallinks'] = $box;
+
+  $box = new stdClass();
+  $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
+  $box->api_version = 1;
   $box->delta = 'impressum';
   $box->plugin_key = 'simple';
   $box->title = '';
@@ -155,9 +192,7 @@ Your contribution to Allied Media Projects is tax-deductible!
     'body' => array(
       'value' => 'Allied Media Projects
 4126 Third St.
-Detroit, MI 48201
-
-<a href="http://amphome-2015.dev.altissima.theworkdept.com/sustain">DONATE</a>',
+Detroit, MI 48201',
       'format' => 'unfiltered',
     ),
     'additional_classes' => '',
