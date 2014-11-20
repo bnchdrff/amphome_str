@@ -924,6 +924,10 @@ function amphome_str_views_default_views() {
       'class' => 'body',
     ),
   );
+  /* Footer: Global: Unfiltered text */
+  $handler->display->display_options['footer']['area_text_custom']['id'] = 'area_text_custom';
+  $handler->display->display_options['footer']['area_text_custom']['table'] = 'views';
+  $handler->display->display_options['footer']['area_text_custom']['field'] = 'area_text_custom';
   /* Relationship: Content: Lead image (field_news_lead_image:fid) */
   $handler->display->display_options['relationships']['field_news_lead_image_fid']['id'] = 'field_news_lead_image_fid';
   $handler->display->display_options['relationships']['field_news_lead_image_fid']['table'] = 'field_data_field_news_lead_image';
@@ -1002,6 +1006,13 @@ function amphome_str_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '3';
   $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['footer'] = FALSE;
+  /* Footer: Global: Unfiltered text */
+  $handler->display->display_options['footer']['area_text_custom']['id'] = 'area_text_custom';
+  $handler->display->display_options['footer']['area_text_custom']['table'] = 'views';
+  $handler->display->display_options['footer']['area_text_custom']['field'] = 'area_text_custom';
+  $handler->display->display_options['footer']['area_text_custom']['label'] = 'read more DFS link';
+  $handler->display->display_options['footer']['area_text_custom']['content'] = '<a href="/news/detroit-future-schools">Read more</a>';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['filter_groups']['groups'] = array(
@@ -1045,6 +1056,13 @@ function amphome_str_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '3';
   $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['footer'] = FALSE;
+  /* Footer: Global: Unfiltered text */
+  $handler->display->display_options['footer']['area_text_custom']['id'] = 'area_text_custom';
+  $handler->display->display_options['footer']['area_text_custom']['table'] = 'views';
+  $handler->display->display_options['footer']['area_text_custom']['field'] = 'area_text_custom';
+  $handler->display->display_options['footer']['area_text_custom']['label'] = 'read more AMC news';
+  $handler->display->display_options['footer']['area_text_custom']['content'] = '<a href="/news/allied-media-conference">Read more</a>';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['filter_groups']['groups'] = array(
@@ -1100,8 +1118,12 @@ function amphome_str_views_default_views() {
     t('All'),
     t('Block - proj - DFS'),
     t('Recent DFS News'),
+    t('read more DFS link'),
+    t('<a href="/news/detroit-future-schools">Read more</a>'),
     t('Block - AMC'),
     t('Recent AMC News'),
+    t('read more AMC news'),
+    t('<a href="/news/allied-media-conference">Read more</a>'),
   );
   $export['project_news'] = $view;
 
