@@ -52,11 +52,9 @@ function amphome_str_default_box() {
       'value' => '<div id="mc_embed_signup">
 <form action="http://alliedmedia.us7.list-manage2.com/subscribe/post?u=ed3193a97f901cbe49364e914&amp;id=e5f6bfebe1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 
-<input type="email" value="" name="EMAIL" placeholder="email" id="mce-EMAIL">
-<br>
-<input type="text" value="" name="mce-MMERGE11" placeholder="zip code" id="mce-MMERGE11">
-<br>
-<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+<input class="form-control form-text input-sm" type="email" value="" name="EMAIL" placeholder="email" id="mce-EMAIL">
+<input class="form-control form-text input-sm" type="text" value="" name="mce-MMERGE11" placeholder="zip code" id="mce-MMERGE11">
+<input class="btn btn-sm btn-primary" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
 
 <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 <div style="position: absolute; left: -5000px;"><input type="text" name="b_ed3193a97f901cbe49364e914_e5f6bfebe1" value=""></div>
@@ -190,9 +188,7 @@ Your contribution to Allied Media Projects is tax-deductible!
   $box->description = 'Impressum';
   $box->options = array(
     'body' => array(
-      'value' => 'Allied Media Projects
-4126 Third St.
-Detroit, MI 48201',
+      'value' => 'Allied Media Projects  /  4126 Third St.  /  Detroit, MI 48201',
       'format' => 'unfiltered',
     ),
     'additional_classes' => '',
