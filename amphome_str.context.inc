@@ -251,24 +251,6 @@ function amphome_str_context_default_contexts() {
           'region' => 'sidebar_second',
           'weight' => '-10',
         ),
-        'boxes-follow_facebook' => array(
-          'module' => 'boxes',
-          'delta' => 'follow_facebook',
-          'region' => 'sidebar_second',
-          'weight' => '-9',
-        ),
-        'boxes-follow_twitter' => array(
-          'module' => 'boxes',
-          'delta' => 'follow_twitter',
-          'region' => 'sidebar_second',
-          'weight' => '-8',
-        ),
-        'boxes-register_conference' => array(
-          'module' => 'boxes',
-          'delta' => 'register_conference',
-          'region' => 'sidebar_second',
-          'weight' => '-7',
-        ),
       ),
     ),
   );
