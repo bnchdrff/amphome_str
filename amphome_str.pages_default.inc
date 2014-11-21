@@ -425,6 +425,34 @@ function amphome_str_default_page_manager_pages() {
     $display->content['new-83951c9c-f344-4f42-8aad-1d304fb5e33b'] = $pane;
     $display->panels['right_side_thingie'][0] = 'new-83951c9c-f344-4f42-8aad-1d304fb5e33b';
     $pane = new stdClass();
+    $pane->pid = 'new-40735c92-f5d7-40cd-b499-71fc4c78bfe6';
+    $pane->panel = 'sidebar';
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'admin_title' => 'mission statement',
+      'title' => '',
+      'body' => 'Media strategies for a more just, creative, and collaborative world.',
+      'format' => 'unfiltered',
+      'substitute' => TRUE,
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'mission-statement',
+    );
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '40735c92-f5d7-40cd-b499-71fc4c78bfe6';
+    $display->content['new-40735c92-f5d7-40cd-b499-71fc4c78bfe6'] = $pane;
+    $display->panels['sidebar'][0] = 'new-40735c92-f5d7-40cd-b499-71fc4c78bfe6';
+    $pane = new stdClass();
     $pane->pid = 'new-4d8e53c4-2f10-48b5-b01e-ba373634d293';
     $pane->panel = 'sidebar';
     $pane->type = 'block';
@@ -441,11 +469,11 @@ function amphome_str_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 0;
+    $pane->position = 1;
     $pane->locks = array();
     $pane->uuid = '4d8e53c4-2f10-48b5-b01e-ba373634d293';
     $display->content['new-4d8e53c4-2f10-48b5-b01e-ba373634d293'] = $pane;
-    $display->panels['sidebar'][0] = 'new-4d8e53c4-2f10-48b5-b01e-ba373634d293';
+    $display->panels['sidebar'][1] = 'new-4d8e53c4-2f10-48b5-b01e-ba373634d293';
     $pane = new stdClass();
     $pane->pid = 'new-d4dfc265-587f-43b8-92bb-0e318f92817a';
     $pane->panel = 'store_item_1';
