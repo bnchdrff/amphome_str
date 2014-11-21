@@ -26,7 +26,7 @@ function amphome_str_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -48,
     'customized' => 1,
-    'parent_identifier' => 'main-menu_previous-years:node/736',
+    'parent_identifier' => 'main-menu_previous-years:<nolink>',
   );
   // Exported menu link: main-menu_2014:node/766
   $menu_links['main-menu_2014:node/766'] = array(
@@ -44,7 +44,7 @@ function amphome_str_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -49,
     'customized' => 1,
-    'parent_identifier' => 'main-menu_previous-years:node/736',
+    'parent_identifier' => 'main-menu_previous-years:<nolink>',
   );
   // Exported menu link: main-menu_about:<nolink>
   $menu_links['main-menu_about:<nolink>'] = array(
@@ -66,24 +66,25 @@ function amphome_str_menu_default_menu_links() {
     'weight' => -46,
     'customized' => 1,
   );
-  // Exported menu link: main-menu_about:node/763
-  $menu_links['main-menu_about:node/763'] = array(
+  // Exported menu link: main-menu_about:node/735
+  $menu_links['main-menu_about:node/735'] = array(
     'menu_name' => 'main-menu',
-    'link_path' => 'node/763',
+    'link_path' => 'node/735',
     'router_path' => 'node/%',
     'link_title' => 'About',
     'options' => array(
-      'identifier' => 'main-menu_about:node/763',
-      'attributes' => array(),
+      'attributes' => array(
+        'title' => '',
+      ),
+      'identifier' => 'main-menu_about:node/735',
     ),
     'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
     'has_children' => 1,
-    'expanded' => 0,
-    'weight' => -45,
+    'expanded' => 1,
+    'weight' => -47,
     'customized' => 1,
-    'parent_identifier' => 'main-menu_allied-media-conference:node/743',
   );
   // Exported menu link: main-menu_accessibility:node/760
   $menu_links['main-menu_accessibility:node/760'] = array(
@@ -101,7 +102,7 @@ function amphome_str_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -45,
     'customized' => 1,
-    'parent_identifier' => 'main-menu_attend:node/751',
+    'parent_identifier' => 'main-menu_attend:<nolink>',
   );
   // Exported menu link: main-menu_accomplishments:node/740
   $menu_links['main-menu_accomplishments:node/740'] = array(
@@ -141,20 +142,23 @@ function amphome_str_menu_default_menu_links() {
     'weight' => -50,
     'customized' => 1,
   );
-  // Exported menu link: main-menu_attend:node/751
-  $menu_links['main-menu_attend:node/751'] = array(
+  // Exported menu link: main-menu_attend:<nolink>
+  $menu_links['main-menu_attend:<nolink>'] = array(
     'menu_name' => 'main-menu',
-    'link_path' => 'node/751',
-    'router_path' => 'node/%',
+    'link_path' => '<nolink>',
+    'router_path' => '<nolink>',
     'link_title' => 'Attend',
     'options' => array(
-      'identifier' => 'main-menu_attend:node/751',
+      'identifier' => 'main-menu_attend:<nolink>',
+      'attributes' => array(
+        'title' => '',
+      ),
     ),
     'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
     'has_children' => 1,
-    'expanded' => 0,
+    'expanded' => 1,
     'weight' => -46,
     'customized' => 1,
     'parent_identifier' => 'main-menu_allied-media-conference:node/743',
@@ -195,7 +199,7 @@ function amphome_str_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -47,
     'customized' => 1,
-    'parent_identifier' => 'main-menu_attend:node/751',
+    'parent_identifier' => 'main-menu_attend:<nolink>',
   );
   // Exported menu link: main-menu_conference-mission:node/763
   $menu_links['main-menu_conference-mission:node/763'] = array(
@@ -213,7 +217,7 @@ function amphome_str_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -48,
     'customized' => 1,
-    'parent_identifier' => 'main-menu_about:node/763',
+    'parent_identifier' => 'main-menu_about:<nolink>',
   );
   // Exported menu link: main-menu_contact:node/532
   $menu_links['main-menu_contact:node/532'] = array(
@@ -320,7 +324,7 @@ function amphome_str_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -49,
     'customized' => 1,
-    'parent_identifier' => 'main-menu_participate:node/749',
+    'parent_identifier' => 'main-menu_participate:<nolink>',
   );
   // Exported menu link: main-menu_glossary:node/765
   $menu_links['main-menu_glossary:node/765'] = array(
@@ -338,7 +342,7 @@ function amphome_str_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -46,
     'customized' => 1,
-    'parent_identifier' => 'main-menu_about:node/763',
+    'parent_identifier' => 'main-menu_about:<nolink>',
   );
   // Exported menu link: main-menu_how-we-organize-the-amc:node/764
   $menu_links['main-menu_how-we-organize-the-amc:node/764'] = array(
@@ -356,7 +360,7 @@ function amphome_str_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -47,
     'customized' => 1,
-    'parent_identifier' => 'main-menu_about:node/763',
+    'parent_identifier' => 'main-menu_about:<nolink>',
   );
   // Exported menu link: main-menu_how-we-organize:node/733
   $menu_links['main-menu_how-we-organize:node/733'] = array(
@@ -374,7 +378,7 @@ function amphome_str_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -50,
     'customized' => 1,
-    'parent_identifier' => 'main-menu_participate:node/749',
+    'parent_identifier' => 'main-menu_participate:<nolink>',
   );
   // Exported menu link: main-menu_june-18-21:node/750
   $menu_links['main-menu_june-18-21:node/750'] = array(
@@ -411,7 +415,7 @@ function amphome_str_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -50,
     'customized' => 1,
-    'parent_identifier' => 'main-menu_attend:node/751',
+    'parent_identifier' => 'main-menu_attend:<nolink>',
   );
   // Exported menu link: main-menu_mission--principles:node/410
   $menu_links['main-menu_mission--principles:node/410'] = array(
@@ -447,7 +451,7 @@ function amphome_str_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -48,
     'customized' => 1,
-    'parent_identifier' => 'main-menu_program:node/732',
+    'parent_identifier' => 'main-menu_program:<nolink>',
   );
   // Exported menu link: main-menu_overview:node/769
   $menu_links['main-menu_overview:node/769'] = array(
@@ -470,21 +474,23 @@ function amphome_str_menu_default_menu_links() {
     'customized' => 1,
     'parent_identifier' => 'main-menu_complex-movements:node/769',
   );
-  // Exported menu link: main-menu_participate:node/749
-  $menu_links['main-menu_participate:node/749'] = array(
+  // Exported menu link: main-menu_participate:<nolink>
+  $menu_links['main-menu_participate:<nolink>'] = array(
     'menu_name' => 'main-menu',
-    'link_path' => 'node/749',
-    'router_path' => 'node/%',
+    'link_path' => '<nolink>',
+    'router_path' => '<nolink>',
     'link_title' => 'Participate',
     'options' => array(
-      'attributes' => array(),
-      'identifier' => 'main-menu_participate:node/749',
+      'attributes' => array(
+        'title' => '',
+      ),
+      'identifier' => 'main-menu_participate:<nolink>',
     ),
     'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
     'has_children' => 1,
-    'expanded' => 0,
+    'expanded' => 1,
     'weight' => -47,
     'customized' => 1,
     'parent_identifier' => 'main-menu_allied-media-conference:node/743',
@@ -523,7 +529,7 @@ function amphome_str_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -48,
     'customized' => 1,
-    'parent_identifier' => 'main-menu_attend:node/751',
+    'parent_identifier' => 'main-menu_attend:<nolink>',
   );
   // Exported menu link: main-menu_places-to-stay:node/757
   $menu_links['main-menu_places-to-stay:node/757'] = array(
@@ -541,40 +547,46 @@ function amphome_str_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -49,
     'customized' => 1,
-    'parent_identifier' => 'main-menu_attend:node/751',
+    'parent_identifier' => 'main-menu_attend:<nolink>',
   );
-  // Exported menu link: main-menu_previous-years:node/736
-  $menu_links['main-menu_previous-years:node/736'] = array(
+  // Exported menu link: main-menu_previous-years:<nolink>
+  $menu_links['main-menu_previous-years:<nolink>'] = array(
     'menu_name' => 'main-menu',
-    'link_path' => 'node/736',
-    'router_path' => 'node/%',
+    'link_path' => '<nolink>',
+    'router_path' => '<nolink>',
     'link_title' => 'Previous Years',
     'options' => array(
-      'identifier' => 'main-menu_previous-years:node/736',
+      'identifier' => 'main-menu_previous-years:<nolink>',
+      'attributes' => array(
+        'title' => '',
+      ),
     ),
     'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
     'has_children' => 1,
-    'expanded' => 0,
+    'expanded' => 1,
     'weight' => -44,
     'customized' => 1,
     'parent_identifier' => 'main-menu_allied-media-conference:node/743',
   );
-  // Exported menu link: main-menu_program:node/732
-  $menu_links['main-menu_program:node/732'] = array(
+  // Exported menu link: main-menu_program:<nolink>
+  $menu_links['main-menu_program:<nolink>'] = array(
     'menu_name' => 'main-menu',
-    'link_path' => 'node/732',
-    'router_path' => 'node/%',
+    'link_path' => '<nolink>',
+    'router_path' => '<nolink>',
     'link_title' => 'Program',
     'options' => array(
-      'identifier' => 'main-menu_program:node/732',
+      'identifier' => 'main-menu_program:<nolink>',
+      'attributes' => array(
+        'title' => '',
+      ),
     ),
     'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
     'has_children' => 1,
-    'expanded' => 0,
+    'expanded' => 1,
     'weight' => -48,
     'customized' => 1,
     'parent_identifier' => 'main-menu_allied-media-conference:node/743',
@@ -595,7 +607,7 @@ function amphome_str_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -47,
     'customized' => 1,
-    'parent_identifier' => 'main-menu_participate:node/749',
+    'parent_identifier' => 'main-menu_participate:<nolink>',
   );
   // Exported menu link: main-menu_reports:node/746
   $menu_links['main-menu_reports:node/746'] = array(
@@ -631,7 +643,7 @@ function amphome_str_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -49,
     'customized' => 1,
-    'parent_identifier' => 'main-menu_program:node/732',
+    'parent_identifier' => 'main-menu_program:<nolink>',
   );
   // Exported menu link: main-menu_sponsor:node/745
   $menu_links['main-menu_sponsor:node/745'] = array(
@@ -649,7 +661,7 @@ function amphome_str_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -46,
     'customized' => 1,
-    'parent_identifier' => 'main-menu_participate:node/749',
+    'parent_identifier' => 'main-menu_participate:<nolink>',
   );
   // Exported menu link: main-menu_sponsored-projects:node/737
   $menu_links['main-menu_sponsored-projects:node/737'] = array(
@@ -705,7 +717,7 @@ function amphome_str_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -45,
     'customized' => 1,
-    'parent_identifier' => 'main-menu_participate:node/749',
+    'parent_identifier' => 'main-menu_participate:<nolink>',
   );
   // Exported menu link: main-menu_tools--resources:node/762
   $menu_links['main-menu_tools--resources:node/762'] = array(
@@ -723,7 +735,7 @@ function amphome_str_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -49,
     'customized' => 1,
-    'parent_identifier' => 'main-menu_about:node/763',
+    'parent_identifier' => 'main-menu_about:<nolink>',
   );
   // Exported menu link: main-menu_tracks-practice-spaces-network-gatherings:node/747
   $menu_links['main-menu_tracks-practice-spaces-network-gatherings:node/747'] = array(
@@ -741,7 +753,7 @@ function amphome_str_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -50,
     'customized' => 1,
-    'parent_identifier' => 'main-menu_program:node/732',
+    'parent_identifier' => 'main-menu_program:<nolink>',
   );
   // Exported menu link: main-menu_volunteer:node/754
   $menu_links['main-menu_volunteer:node/754'] = array(
@@ -759,7 +771,7 @@ function amphome_str_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -44,
     'customized' => 1,
-    'parent_identifier' => 'main-menu_participate:node/749',
+    'parent_identifier' => 'main-menu_participate:<nolink>',
   );
   // Translatables
   // Included for use with string extractors like potx.
