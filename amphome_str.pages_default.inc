@@ -443,7 +443,7 @@ function amphome_str_default_page_manager_pages() {
       'settings' => NULL,
     );
     $pane->css = array(
-      'css_id' => '',
+      'css_id' => 'mission-statement',
       'css_class' => 'mission-statement',
     );
     $pane->extras = array();
