@@ -26,9 +26,9 @@ function amphome_str_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'views-amp_news-block_6' => array(
+        'views-project_news-amc' => array(
           'module' => 'views',
-          'delta' => 'amp_news-block_6',
+          'delta' => 'project_news-amc',
           'region' => 'sidebar_second',
           'weight' => '-10',
         ),
@@ -217,9 +217,9 @@ function amphome_str_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'views-amp_news-block_5' => array(
+        'views-project_news-dfs' => array(
           'module' => 'views',
-          'delta' => 'amp_news-block_5',
+          'delta' => 'project_news-dfs',
           'region' => 'sidebar_second',
           'weight' => '-10',
         ),
@@ -228,6 +228,34 @@ function amphome_str_context_default_contexts() {
   );
   $context->condition_mode = 0;
   $export['project_dfs'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'secondarysidebar';
+  $context->description = '';
+  $context->tag = '';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        '~sponsored-projects' => '~sponsored-projects',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'boxes-amp_list_signup' => array(
+          'module' => 'boxes',
+          'delta' => 'amp_list_signup',
+          'region' => 'sidebar_second',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+  $export['secondarysidebar'] = $context;
 
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
@@ -263,35 +291,23 @@ function amphome_str_context_default_contexts() {
           'region' => 'content',
           'weight' => '-10',
         ),
-        'boxes-amp_list_signup' => array(
-          'module' => 'boxes',
-          'delta' => 'amp_list_signup',
-          'region' => 'sidebar_second',
-          'weight' => '-10',
-        ),
-        'boxes-follow_facebook' => array(
-          'module' => 'boxes',
-          'delta' => 'follow_facebook',
-          'region' => 'sidebar_second',
-          'weight' => '-9',
-        ),
-        'boxes-follow_twitter' => array(
-          'module' => 'boxes',
-          'delta' => 'follow_twitter',
-          'region' => 'sidebar_second',
-          'weight' => '-8',
-        ),
-        'boxes-register_conference' => array(
-          'module' => 'boxes',
-          'delta' => 'register_conference',
-          'region' => 'sidebar_second',
-          'weight' => '-7',
-        ),
         'boxes-impressum' => array(
           'module' => 'boxes',
           'delta' => 'impressum',
           'region' => 'footer',
           'weight' => '-10',
+        ),
+        'boxes-footer_donatelink' => array(
+          'module' => 'boxes',
+          'delta' => 'footer_donatelink',
+          'region' => 'footer',
+          'weight' => '-9',
+        ),
+        'boxes-footer_sociallinks' => array(
+          'module' => 'boxes',
+          'delta' => 'footer_sociallinks',
+          'region' => 'footer',
+          'weight' => '-8',
         ),
       ),
     ),
