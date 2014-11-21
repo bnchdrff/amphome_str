@@ -435,6 +435,8 @@ function amphome_str_views_default_views() {
   $handler = $view->new_display('block', 'Block - Recent News', 'block_3');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Recent News';
+  $handler->display->display_options['defaults']['css_class'] = FALSE;
+  $handler->display->display_options['css_class'] = 'amp-news-block';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '3';
@@ -449,8 +451,8 @@ function amphome_str_views_default_views() {
   $handler->display->display_options['row_options']['skip_blank'] = 1;
   $handler->display->display_options['row_options']['semantic_html'] = array(
     'title' => array(
-      'element_type' => 'div',
-      'class' => 'title',
+      'element_type' => 'h3',
+      'class' => '',
     ),
     'created' => array(
       'element_type' => 'time',
