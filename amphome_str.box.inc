@@ -167,15 +167,16 @@ Your contribution to Allied Media Projects is tax-deductible!
   $box->description = 'social media links for the footer';
   $box->options = array(
     'body' => array(
-      'value' => '<a href="" class="facebook">Facebook</a>
-<a href="" class="twitter">Twitter</a>
-<a href="" class="tumblr">Tumblr</a>
-<a href="" class="youtube">Youtube</a>
-<a href="" class="vimeo">Vimeo</a>
-<a href="" class="flickr">Flickr</a>
-<a href="" class="instagram">Instagram</a>',
+      'value' => '<a href="https://www.facebook.com/alliedmediaprojects" class="facebook" target="_blank">Facebook</a>
+<a href="https://twitter.com/allied_media" class="twitter" target="_blank">Twitter</a>
+<a href="http://alliedmedia.tumblr.com/" class="tumblr" target="_blank">Tumblr</a>
+<a href="https://www.youtube.com/user/alliedmedia" class="youtube" target="_blank">Youtube</a>
+<a href="http://vimeo.com/alliedmediaprojects" class="vimeo" target="_blank">Vimeo</a>
+<a href="https://www.flickr.com/photos/alliedmedia/" class="flickr" target="_blank">Flickr</a>
+<a href="http://instagram.com/alliedmedia" class="instagram" target="_blank">Instagram</a>',
       'format' => 'really_really_unfiltered',
     ),
+    'additional_classes' => '',
   );
   $export['footer_sociallinks'] = $box;
 
@@ -188,8 +189,9 @@ Your contribution to Allied Media Projects is tax-deductible!
   $box->description = 'Impressum';
   $box->options = array(
     'body' => array(
-      'value' => 'Allied Media Projects  /  4126 Third St.  /  Detroit, MI 48201',
-      'format' => 'unfiltered',
+      'value' => 'Allied Media Projects  /  4126 Third St.  /  Detroit, MI 48201
+<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Content licensed under a Attribution-NonCommercial-ShareAlike 3.0 Unported Licensed</a>',
+      'format' => 'whatever_you_need',
     ),
     'additional_classes' => '',
   );
