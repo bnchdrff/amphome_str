@@ -118,17 +118,26 @@ function amphome_str_strongarm() {
       'cck_blocks' => array(
         'custom_settings' => TRUE,
       ),
+      'search_index' => array(
+        'custom_settings' => FALSE,
+      ),
+      'search_result' => array(
+        'custom_settings' => FALSE,
+      ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '3',
+          'weight' => '4',
         ),
         'path' => array(
-          'weight' => '8',
+          'weight' => '9',
         ),
         'redirect' => array(
-          'weight' => '7',
+          'weight' => '8',
         ),
         'metatags' => array(
           'weight' => '10',
