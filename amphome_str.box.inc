@@ -190,7 +190,7 @@ Your contribution to Allied Media Projects is tax-deductible!
   $box->options = array(
     'body' => array(
       'value' => 'Allied Media Projects  /  4126 Third St.  /  Detroit, MI 48201
-<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Content licensed under a Attribution-NonCommercial-ShareAlike 3.0 Unported Licensed</a>',
+<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US" target="_blank">Content licensed under a Attribution-NonCommercial-ShareAlike 3.0 Unported Licensed</a>',
       'format' => 'whatever_you_need',
     ),
     'additional_classes' => '',

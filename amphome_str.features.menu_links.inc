@@ -20,7 +20,7 @@ function amphome_str_menu_default_menu_links() {
       'identifier' => 'main-menu_2013:node/767',
     ),
     'module' => 'menu',
-    'hidden' => 0,
+    'hidden' => 1,
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
@@ -38,7 +38,7 @@ function amphome_str_menu_default_menu_links() {
       'identifier' => 'main-menu_2014:node/766',
     ),
     'module' => 'menu',
-    'hidden' => 0,
+    'hidden' => 1,
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
@@ -118,8 +118,8 @@ function amphome_str_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 0,
-    'customized' => 0,
+    'weight' => -50,
+    'customized' => 1,
     'parent_identifier' => 'main-menu_detroit-future-schools:node/738',
   );
   // Exported menu link: main-menu_allied-media-conference:node/743
@@ -129,9 +129,7 @@ function amphome_str_menu_default_menu_links() {
     'router_path' => 'node/%',
     'link_title' => 'Allied Media Conference',
     'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
+      'attributes' => array(),
       'identifier' => 'main-menu_allied-media-conference:node/743',
     ),
     'module' => 'menu',
@@ -159,7 +157,7 @@ function amphome_str_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 1,
     'expanded' => 1,
-    'weight' => -46,
+    'weight' => -47,
     'customized' => 1,
     'parent_identifier' => 'main-menu_allied-media-conference:node/743',
   );
@@ -215,7 +213,7 @@ function amphome_str_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -48,
+    'weight' => -49,
     'customized' => 1,
     'parent_identifier' => 'main-menu_about:<nolink>',
   );
@@ -250,8 +248,8 @@ function amphome_str_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 0,
-    'customized' => 0,
+    'weight' => -48,
+    'customized' => 1,
     'parent_identifier' => 'main-menu_detroit-future-schools:node/738',
   );
   // Exported menu link: main-menu_detroit-future-schools:node/738
@@ -286,8 +284,8 @@ function amphome_str_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 0,
-    'customized' => 0,
+    'weight' => -47,
+    'customized' => 1,
     'parent_identifier' => 'main-menu_detroit-future-schools:node/738',
   );
   // Exported menu link: main-menu_funding--financials:node/412
@@ -340,7 +338,7 @@ function amphome_str_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -46,
+    'weight' => -47,
     'customized' => 1,
     'parent_identifier' => 'main-menu_about:<nolink>',
   );
@@ -358,7 +356,7 @@ function amphome_str_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -47,
+    'weight' => -48,
     'customized' => 1,
     'parent_identifier' => 'main-menu_about:<nolink>',
   );
@@ -491,7 +489,7 @@ function amphome_str_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 1,
     'expanded' => 1,
-    'weight' => -47,
+    'weight' => -48,
     'customized' => 1,
     'parent_identifier' => 'main-menu_allied-media-conference:node/743',
   );
@@ -562,11 +560,11 @@ function amphome_str_menu_default_menu_links() {
       ),
     ),
     'module' => 'menu',
-    'hidden' => 0,
+    'hidden' => 1,
     'external' => 0,
-    'has_children' => 1,
+    'has_children' => 0,
     'expanded' => 1,
-    'weight' => -44,
+    'weight' => -45,
     'customized' => 1,
     'parent_identifier' => 'main-menu_allied-media-conference:node/743',
   );
@@ -587,7 +585,7 @@ function amphome_str_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 1,
     'expanded' => 1,
-    'weight' => -48,
+    'weight' => -49,
     'customized' => 1,
     'parent_identifier' => 'main-menu_allied-media-conference:node/743',
   );
@@ -697,8 +695,8 @@ function amphome_str_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 0,
-    'customized' => 0,
+    'weight' => -49,
+    'customized' => 1,
     'parent_identifier' => 'main-menu_detroit-future-schools:node/738',
   );
   // Exported menu link: main-menu_table:node/755
@@ -733,7 +731,7 @@ function amphome_str_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -49,
+    'weight' => -50,
     'customized' => 1,
     'parent_identifier' => 'main-menu_about:<nolink>',
   );
