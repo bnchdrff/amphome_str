@@ -69,6 +69,21 @@ function amphome_str_default_box() {
   $box = new stdClass();
   $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
   $box->api_version = 1;
+  $box->delta = 'blog_addthis';
+  $box->plugin_key = 'simple';
+  $box->title = '';
+  $box->description = '"add this" for blog';
+  $box->options = array(
+    'body' => array(
+      'value' => '<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-546b62de68c18e7f" async="async"></script>',
+      'format' => 'really_really_unfiltered',
+    ),
+  );
+  $export['blog_addthis'] = $box;
+
+  $box = new stdClass();
+  $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
+  $box->api_version = 1;
   $box->delta = 'contact_quick_links';
   $box->plugin_key = 'simple';
   $box->title = '';
