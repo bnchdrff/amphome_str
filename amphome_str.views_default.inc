@@ -833,6 +833,95 @@ function amphome_str_views_default_views() {
   $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'News';
   $handler->display->display_options['menu']['name'] = 'main-menu';
+
+  /* Display: Block - frontpage Recent News */
+  $handler = $view->new_display('block', 'Block - frontpage Recent News', 'front_recent');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Recent News';
+  $handler->display->display_options['defaults']['css_class'] = FALSE;
+  $handler->display->display_options['css_class'] = 'amp-news-block';
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '3';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'semanticviews_default';
+  $handler->display->display_options['style_options']['grouping'] = '';
+  $handler->display->display_options['style_options']['row']['element_type'] = 'article';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'semanticviews_fields';
+  $handler->display->display_options['row_options']['skip_blank'] = 1;
+  $handler->display->display_options['row_options']['semantic_html'] = array(
+    'title' => array(
+      'element_type' => 'h3',
+      'class' => '',
+    ),
+    'created' => array(
+      'element_type' => 'time',
+      'class' => 'date',
+    ),
+    'field_news_term' => array(
+      'element_type' => 'span',
+      'class' => 'category',
+    ),
+    'body' => array(
+      'element_type' => 'div',
+      'class' => 'body',
+    ),
+  );
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Field: Content: Post date */
+  $handler->display->display_options['fields']['created']['id'] = 'created';
+  $handler->display->display_options['fields']['created']['table'] = 'node';
+  $handler->display->display_options['fields']['created']['field'] = 'created';
+  $handler->display->display_options['fields']['created']['label'] = '';
+  $handler->display->display_options['fields']['created']['alter']['text'] = '[created] <span class="category">[field_news_term]</span>';
+  $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['created']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['created']['date_format'] = 'date_basic';
+  /* Field: Content: Category */
+  $handler->display->display_options['fields']['field_news_term']['id'] = 'field_news_term';
+  $handler->display->display_options['fields']['field_news_term']['table'] = 'field_data_field_news_term';
+  $handler->display->display_options['fields']['field_news_term']['field'] = 'field_news_term';
+  $handler->display->display_options['fields']['field_news_term']['label'] = '';
+  $handler->display->display_options['fields']['field_news_term']['element_type'] = 'span';
+  $handler->display->display_options['fields']['field_news_term']['element_class'] = 'category';
+  $handler->display->display_options['fields']['field_news_term']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_news_term']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_news_term']['hide_empty'] = TRUE;
+  /* Field: Content: Body */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['alter']['strip_tags'] = TRUE;
+  $handler->display->display_options['fields']['body']['alter']['preserve_tags'] = '<p> <a> <ul> <li> <ol> <br>';
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['type'] = 'text_summary_or_trimmed';
+  $handler->display->display_options['fields']['body']['settings'] = array(
+    'trim_length' => '600',
+  );
+  /* Field: Content: Lead image */
+  $handler->display->display_options['fields']['field_news_lead_image']['id'] = 'field_news_lead_image';
+  $handler->display->display_options['fields']['field_news_lead_image']['table'] = 'field_data_field_news_lead_image';
+  $handler->display->display_options['fields']['field_news_lead_image']['field'] = 'field_news_lead_image';
+  $handler->display->display_options['fields']['field_news_lead_image']['label'] = '';
+  $handler->display->display_options['fields']['field_news_lead_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_news_lead_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_news_lead_image']['settings'] = array(
+    'image_style' => 'leadimage_400w',
+    'image_link' => '',
+  );
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
   $translatables['amp_news'] = array(
     t('Master'),
     t('AMP Blog'),
@@ -885,6 +974,7 @@ function amphome_str_views_default_views() {
     t('leadimage_small_sq'),
     t('by tag'),
     t('AMP News: %1'),
+    t('Block - frontpage Recent News'),
   );
   $export['amp_news'] = $view;
 
