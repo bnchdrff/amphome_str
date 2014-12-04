@@ -524,7 +524,7 @@ function amphome_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 6,
+        'weight' => 7,
       ),
       'default' => array(
         'label' => 'hidden',
@@ -574,7 +574,7 @@ function amphome_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 4,
       ),
       'default' => array(
         'label' => 'above',
@@ -619,7 +619,7 @@ function amphome_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 3,
       ),
       'default' => array(
         'label' => 'above',
@@ -667,13 +667,13 @@ function amphome_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 2,
+        'weight' => 6,
       ),
       'default' => array(
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 3,
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -718,16 +718,20 @@ function amphome_str_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'cck_blocks' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 5,
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => 'medium',
+        ),
+        'type' => 'image',
+        'weight' => 0,
       ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 7,
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -781,13 +785,14 @@ function amphome_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 1,
+        'weight' => 5,
       ),
       'default' => array(
         'label' => 'above',
+        'module' => 'link',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 4,
+        'type' => 'link_default',
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -839,15 +844,16 @@ function amphome_str_field_default_field_instances() {
     'display' => array(
       'cck_blocks' => array(
         'label' => 'above',
+        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 3,
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 1,
       ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 6,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -879,19 +885,16 @@ function amphome_str_field_default_field_instances() {
   // Exported field_instance: 'node-news_item-field_news_term'
   $field_instances['node-news_item-field_news_term'] = array(
     'bundle' => 'news_item',
-    'default_value' => array(
-      0 => array(
-        'tid' => 3,
-      ),
-    ),
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'cck_blocks' => array(
         'label' => 'above',
+        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 4,
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 2,
       ),
       'default' => array(
         'label' => 'above',

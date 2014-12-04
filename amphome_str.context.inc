@@ -156,6 +156,24 @@ function amphome_str_context_default_contexts() {
           'region' => 'content',
           'weight' => '-10',
         ),
+        'cck_blocks-field_news_lead_image' => array(
+          'module' => 'cck_blocks',
+          'delta' => 'field_news_lead_image',
+          'region' => 'sidebar_second',
+          'weight' => '-29',
+        ),
+        'cck_blocks-field_news_term' => array(
+          'module' => 'cck_blocks',
+          'delta' => 'field_news_term',
+          'region' => 'sidebar_second',
+          'weight' => '-27',
+        ),
+        'cck_blocks-field_news_tags' => array(
+          'module' => 'cck_blocks',
+          'delta' => 'field_news_tags',
+          'region' => 'sidebar_second',
+          'weight' => '-25',
+        ),
       ),
     ),
   );

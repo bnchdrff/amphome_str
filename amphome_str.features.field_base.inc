@@ -182,7 +182,7 @@ function amphome_str_field_default_field_bases() {
         'table' => 'file_managed',
       ),
     ),
-    'global_block_settings' => 1,
+    'global_block_settings' => 2,
     'indexes' => array(
       'fid' => array(
         0 => 'fid',
@@ -330,7 +330,7 @@ function amphome_str_field_default_field_bases() {
         'table' => 'taxonomy_term_data',
       ),
     ),
-    'global_block_settings' => 1,
+    'global_block_settings' => 2,
     'indexes' => array(
       'tid' => array(
         0 => 'tid',
@@ -365,7 +365,7 @@ function amphome_str_field_default_field_bases() {
         'table' => 'taxonomy_term_data',
       ),
     ),
-    'global_block_settings' => 1,
+    'global_block_settings' => 2,
     'indexes' => array(
       'tid' => array(
         0 => 'tid',
