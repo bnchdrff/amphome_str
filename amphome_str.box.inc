@@ -52,8 +52,8 @@ function amphome_str_default_box() {
       'value' => '<div id="mc_embed_signup">
 <form action="http://alliedmedia.us7.list-manage2.com/subscribe/post?u=ed3193a97f901cbe49364e914&amp;id=e5f6bfebe1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 
-<input class="form-control form-text input-sm" type="email" value="" name="EMAIL" placeholder="email" id="mce-EMAIL">
-<input class="form-control form-text input-sm" type="text" value="" name="MMERGE11" placeholder="zip code" id="mce-MMERGE11">
+<input class="form-control form-text input-sm" type="Email" value="" name="EMAIL" placeholder="Email" id="mce-EMAIL">
+<input class="form-control form-text input-sm" type="text" value="" name="MMERGE11" placeholder="Zip code" id="mce-MMERGE11">
 <input class="btn btn-sm btn-primary" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
 
 <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
