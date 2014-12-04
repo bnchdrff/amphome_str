@@ -114,13 +114,30 @@ Your contribution to Allied Media Projects is tax-deductible!
   $box->api_version = 1;
   $box->delta = 'flex_graphic_box';
   $box->plugin_key = 'simple';
-  $box->title = 'Flexible graphic area';
+  $box->title = '';
   $box->description = 'Flexible graphic area';
   $box->options = array(
     'body' => array(
-      'value' => 'hi',
-      'format' => 'unfiltered',
+      'value' => '<span class="sell">AMP produces the <br><a href="/amc" data-scrubber="amc">Allied Media Conference</a> <br>and supports <br><a href="/sponsored-projects" data-scrubber="sponsoredprojects">art / media / technology<br>projects.</a></span>
+
+<a href="/amc"><ul class="scrubber amc" data-scrubber="amc">
+  <li><img src="/sites/amphome-2015-v4.dev.altissima.theworkdept.com/themes/amphome/images/frontpage/amphome_circleimage_amc1.png"></li>
+  <li><img src="/sites/amphome-2015-v4.dev.altissima.theworkdept.com/themes/amphome/images/frontpage/amphome_circleimage_amc2.png"></li>
+  <li><img src="/sites/amphome-2015-v4.dev.altissima.theworkdept.com/themes/amphome/images/frontpage/amphome_circleimage_amc3.png"></li>
+</ul></a>
+
+<a href="/sponsored-projects"><ul class="scrubber sponsoredprojects" data-scrubber="sponsoredprojects">
+  <li><img src="/sites/amphome-2015-v4.dev.altissima.theworkdept.com/themes/amphome/images/frontpage/amphome_circleimage_sp1.png"></li>
+  <li><img src="/sites/amphome-2015-v4.dev.altissima.theworkdept.com/themes/amphome/images/frontpage/amphome_circleimage_sp2.png"></li>
+  <li><img src="/sites/amphome-2015-v4.dev.altissima.theworkdept.com/themes/amphome/images/frontpage/amphome_circleimage_sp3.png"></li>
+</ul></a>
+
+<div class="arrow amc"></div>
+<div class="arrow amp"></div>
+<div class="arrow sponsoredprojects"></div>',
+      'format' => 'really_really_unfiltered',
     ),
+    'additional_classes' => '',
   );
   $export['flex_graphic_box'] = $box;
 
