@@ -297,13 +297,14 @@ Your contribution to Allied Media Projects is tax-deductible!
   $box->api_version = 1;
   $box->delta = 'storeitem1_box';
   $box->plugin_key = 'simple';
-  $box->title = 'Store item 1';
-  $box->description = 'Store item 1';
+  $box->title = '<none>';
+  $box->description = 'Home sidebar';
   $box->options = array(
     'body' => array(
-      'value' => 'hi1',
+      'value' => '<a href="/news/2014/05/09/apply-amp-camp-2014"><img src="/files/amp_camp_graphic-1_0.png"></a>',
       'format' => 'unfiltered',
     ),
+    'additional_classes' => '',
   );
   $export['storeitem1_box'] = $box;
 
