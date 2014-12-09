@@ -40,10 +40,14 @@ function amphome_str_views_default_views() {
       'class' => '',
     ),
   );
-  /* Relationship: Content: Lead image (field_news_lead_image:fid) */
+  /* Relationship: Content: Lead Image (field_news_lead_image:fid) */
   $handler->display->display_options['relationships']['field_news_lead_image_fid']['id'] = 'field_news_lead_image_fid';
   $handler->display->display_options['relationships']['field_news_lead_image_fid']['table'] = 'field_data_field_news_lead_image';
   $handler->display->display_options['relationships']['field_news_lead_image_fid']['field'] = 'field_news_lead_image_fid';
+  /* Relationship: Content: Category (field_news_term) */
+  $handler->display->display_options['relationships']['field_news_term_tid']['id'] = 'field_news_term_tid';
+  $handler->display->display_options['relationships']['field_news_term_tid']['table'] = 'field_data_field_news_term';
+  $handler->display->display_options['relationships']['field_news_term_tid']['field'] = 'field_news_term_tid';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -77,7 +81,7 @@ function amphome_str_views_default_views() {
     'multiple_to' => '',
     'show_repeat_rule' => 'show',
   );
-  /* Field: Content: Lead image */
+  /* Field: Content: Lead Image */
   $handler->display->display_options['fields']['field_news_lead_image']['id'] = 'field_news_lead_image';
   $handler->display->display_options['fields']['field_news_lead_image']['table'] = 'field_data_field_news_lead_image';
   $handler->display->display_options['fields']['field_news_lead_image']['field'] = 'field_news_lead_image';
@@ -145,48 +149,25 @@ function amphome_str_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['pager']['options']['id'] = '0';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
-  $handler->display->display_options['style_plugin'] = 'semanticviews_default';
-  $handler->display->display_options['style_options']['grouping'] = '';
-  $handler->display->display_options['style_options']['row']['element_type'] = 'article';
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['style_options']['default_row_class'] = FALSE;
+  $handler->display->display_options['style_options']['row_class_special'] = FALSE;
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
-  $handler->display->display_options['row_plugin'] = 'semanticviews_fields';
-  $handler->display->display_options['row_options']['skip_blank'] = 0;
-  $handler->display->display_options['row_options']['semantic_html'] = array(
-    'field_news_lead_image' => array(
-      'element_type' => 'div',
-      'class' => 'lead-image',
-    ),
-    'title' => array(
-      'element_type' => 'div',
-      'class' => 'news-title',
-    ),
-    'created' => array(
-      'element_type' => 'time',
-      'class' => 'date',
-    ),
-    'field_news_term' => array(
-      'element_type' => 'span',
-      'class' => 'category',
-      'label_element_type' => 'label',
-      'label_class' => '',
-    ),
-    'body' => array(
-      'element_type' => 'div',
-      'class' => 'body',
-    ),
-  );
+  $handler->display->display_options['row_plugin'] = 'node';
+  $handler->display->display_options['row_options']['links'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Lead image */
+  /* Field: Content: Lead Image */
   $handler->display->display_options['fields']['field_news_lead_image']['id'] = 'field_news_lead_image';
   $handler->display->display_options['fields']['field_news_lead_image']['table'] = 'field_data_field_news_lead_image';
   $handler->display->display_options['fields']['field_news_lead_image']['field'] = 'field_news_lead_image';
   $handler->display->display_options['fields']['field_news_lead_image']['label'] = '';
+  $handler->display->display_options['fields']['field_news_lead_image']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_news_lead_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_news_lead_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_news_lead_image']['settings'] = array(
-    'image_style' => 'medium_thumb',
+    'image_style' => 'medium',
     'image_link' => 'content',
   );
   $handler->display->display_options['fields']['field_news_lead_image']['group_column'] = 'fid';
@@ -195,25 +176,19 @@ function amphome_str_views_default_views() {
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   /* Field: Content: Post date */
   $handler->display->display_options['fields']['created']['id'] = 'created';
   $handler->display->display_options['fields']['created']['table'] = 'node';
   $handler->display->display_options['fields']['created']['field'] = 'created';
   $handler->display->display_options['fields']['created']['label'] = '';
+  $handler->display->display_options['fields']['created']['exclude'] = TRUE;
   $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['created']['date_format'] = 'date_basic';
-  /* Field: Content: Category */
-  $handler->display->display_options['fields']['field_news_term']['id'] = 'field_news_term';
-  $handler->display->display_options['fields']['field_news_term']['table'] = 'field_data_field_news_term';
-  $handler->display->display_options['fields']['field_news_term']['field'] = 'field_news_term';
-  $handler->display->display_options['fields']['field_news_term']['label'] = '';
-  $handler->display->display_options['fields']['field_news_term']['element_type'] = 'span';
-  $handler->display->display_options['fields']['field_news_term']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_news_term']['element_wrapper_type'] = '0';
-  $handler->display->display_options['fields']['field_news_term']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['field_news_term']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['created']['second_date_format'] = 'long';
   /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
@@ -378,7 +353,7 @@ function amphome_str_views_default_views() {
   );
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Lead image */
+  /* Field: Content: Lead Image */
   $handler->display->display_options['fields']['field_news_lead_image']['id'] = 'field_news_lead_image';
   $handler->display->display_options['fields']['field_news_lead_image']['table'] = 'field_data_field_news_lead_image';
   $handler->display->display_options['fields']['field_news_lead_image']['field'] = 'field_news_lead_image';
@@ -643,7 +618,7 @@ function amphome_str_views_default_views() {
     'multiple_to' => '',
     'show_repeat_rule' => 'show',
   );
-  /* Field: Content: Lead image */
+  /* Field: Content: Lead Image */
   $handler->display->display_options['fields']['field_news_lead_image']['id'] = 'field_news_lead_image';
   $handler->display->display_options['fields']['field_news_lead_image']['table'] = 'field_data_field_news_lead_image';
   $handler->display->display_options['fields']['field_news_lead_image']['field'] = 'field_news_lead_image';
@@ -702,7 +677,7 @@ function amphome_str_views_default_views() {
   $handler->display->display_options['fields']['field_news_term_1']['label'] = 'categoryurl';
   $handler->display->display_options['fields']['field_news_term_1']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_news_term_1']['alter']['text'] = 'http://alliedmedia.org/taxonomy/term/[field_news_term_1-tid]';
-  /* Field: Content: Lead image */
+  /* Field: Content: Lead Image */
   $handler->display->display_options['fields']['field_news_lead_image_2']['id'] = 'field_news_lead_image_2';
   $handler->display->display_options['fields']['field_news_lead_image_2']['table'] = 'field_data_field_news_lead_image';
   $handler->display->display_options['fields']['field_news_lead_image_2']['field'] = 'field_news_lead_image';
@@ -725,40 +700,16 @@ function amphome_str_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['pager']['options']['id'] = '0';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
-  $handler->display->display_options['style_plugin'] = 'semanticviews_default';
-  $handler->display->display_options['style_options']['grouping'] = '';
-  $handler->display->display_options['style_options']['row']['element_type'] = 'article';
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['style_options']['default_row_class'] = FALSE;
+  $handler->display->display_options['style_options']['row_class_special'] = FALSE;
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
-  $handler->display->display_options['row_plugin'] = 'semanticviews_fields';
-  $handler->display->display_options['row_options']['skip_blank'] = 0;
-  $handler->display->display_options['row_options']['semantic_html'] = array(
-    'field_news_lead_image' => array(
-      'element_type' => 'div',
-      'class' => 'lead-image',
-    ),
-    'title' => array(
-      'element_type' => 'div',
-      'class' => 'news-title',
-    ),
-    'created' => array(
-      'element_type' => 'time',
-      'class' => 'date',
-    ),
-    'field_news_term' => array(
-      'element_type' => 'span',
-      'class' => 'category',
-      'label_element_type' => 'label',
-      'label_class' => '',
-    ),
-    'body' => array(
-      'element_type' => 'div',
-      'class' => 'body',
-    ),
-  );
+  $handler->display->display_options['row_plugin'] = 'node';
+  $handler->display->display_options['row_options']['links'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Lead image */
+  /* Field: Content: Lead Image */
   $handler->display->display_options['fields']['field_news_lead_image']['id'] = 'field_news_lead_image';
   $handler->display->display_options['fields']['field_news_lead_image']['table'] = 'field_data_field_news_lead_image';
   $handler->display->display_options['fields']['field_news_lead_image']['field'] = 'field_news_lead_image';
@@ -833,6 +784,78 @@ function amphome_str_views_default_views() {
   $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'News';
   $handler->display->display_options['menu']['name'] = 'main-menu';
+
+  /* Display: Block - frontpage Recent News */
+  $handler = $view->new_display('block', 'Block - frontpage Recent News', 'front_recent');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Recent Allied Media Projects News';
+  $handler->display->display_options['defaults']['css_class'] = FALSE;
+  $handler->display->display_options['css_class'] = 'amp-news-block';
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '3';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['style_options']['default_row_class'] = FALSE;
+  $handler->display->display_options['style_options']['row_class_special'] = FALSE;
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'node';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Lead Image */
+  $handler->display->display_options['fields']['field_news_lead_image']['id'] = 'field_news_lead_image';
+  $handler->display->display_options['fields']['field_news_lead_image']['table'] = 'field_data_field_news_lead_image';
+  $handler->display->display_options['fields']['field_news_lead_image']['field'] = 'field_news_lead_image';
+  $handler->display->display_options['fields']['field_news_lead_image']['label'] = '';
+  $handler->display->display_options['fields']['field_news_lead_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_news_lead_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_news_lead_image']['settings'] = array(
+    'image_style' => 'medium',
+    'image_link' => '',
+  );
+  /* Field: Taxonomy term: Term image */
+  $handler->display->display_options['fields']['field_term_image']['id'] = 'field_term_image';
+  $handler->display->display_options['fields']['field_term_image']['table'] = 'field_data_field_term_image';
+  $handler->display->display_options['fields']['field_term_image']['field'] = 'field_term_image';
+  $handler->display->display_options['fields']['field_term_image']['relationship'] = 'field_news_term_tid';
+  $handler->display->display_options['fields']['field_term_image']['label'] = '';
+  $handler->display->display_options['fields']['field_term_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_term_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_term_image']['settings'] = array(
+    'image_style' => 'term_image_thumb',
+    'image_link' => 'content',
+  );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Field: Content: Post date */
+  $handler->display->display_options['fields']['created']['id'] = 'created';
+  $handler->display->display_options['fields']['created']['table'] = 'node';
+  $handler->display->display_options['fields']['created']['field'] = 'created';
+  $handler->display->display_options['fields']['created']['label'] = '';
+  $handler->display->display_options['fields']['created']['alter']['text'] = '[created] <span class="category">[field_news_term]</span>';
+  $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['created']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['created']['date_format'] = 'date_basic';
+  /* Field: Content: Body */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['alter']['strip_tags'] = TRUE;
+  $handler->display->display_options['fields']['body']['alter']['preserve_tags'] = '<p> <a> <ul> <li> <ol> <br>';
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['type'] = 'text_summary_or_trimmed';
+  $handler->display->display_options['fields']['body']['settings'] = array(
+    'trim_length' => '600',
+  );
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
   $translatables['amp_news'] = array(
     t('Master'),
     t('AMP Blog'),
@@ -850,6 +873,7 @@ function amphome_str_views_default_views() {
     t('next ›'),
     t('last »'),
     t('image from field_news_lead_image'),
+    t('term from field_news_term'),
     t('Category'),
     t('Tags'),
     t('Link'),
@@ -870,7 +894,6 @@ function amphome_str_views_default_views() {
     t('Links'),
     t('jsonp'),
     t('lead image'),
-    t('term from field_news_term'),
     t('date'),
     t('leadimage_med_sq'),
     t('category'),
@@ -885,6 +908,8 @@ function amphome_str_views_default_views() {
     t('leadimage_small_sq'),
     t('by tag'),
     t('AMP News: %1'),
+    t('Block - frontpage Recent News'),
+    t('Recent Allied Media Projects News'),
   );
   $export['amp_news'] = $view;
 
@@ -913,6 +938,10 @@ function amphome_str_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'semanticviews_fields';
   $handler->display->display_options['row_options']['skip_blank'] = 1;
   $handler->display->display_options['row_options']['semantic_html'] = array(
+    'field_term_image' => array(
+      'element_type' => 'figure',
+      'class' => '',
+    ),
     'title' => array(
       'element_type' => 'h3',
       'class' => '',
@@ -930,10 +959,26 @@ function amphome_str_views_default_views() {
   $handler->display->display_options['footer']['area_text_custom']['id'] = 'area_text_custom';
   $handler->display->display_options['footer']['area_text_custom']['table'] = 'views';
   $handler->display->display_options['footer']['area_text_custom']['field'] = 'area_text_custom';
-  /* Relationship: Content: Lead image (field_news_lead_image:fid) */
+  /* Relationship: Content: Lead Image (field_news_lead_image:fid) */
   $handler->display->display_options['relationships']['field_news_lead_image_fid']['id'] = 'field_news_lead_image_fid';
   $handler->display->display_options['relationships']['field_news_lead_image_fid']['table'] = 'field_data_field_news_lead_image';
   $handler->display->display_options['relationships']['field_news_lead_image_fid']['field'] = 'field_news_lead_image_fid';
+  /* Relationship: Content: Category (field_news_term) */
+  $handler->display->display_options['relationships']['field_news_term_tid']['id'] = 'field_news_term_tid';
+  $handler->display->display_options['relationships']['field_news_term_tid']['table'] = 'field_data_field_news_term';
+  $handler->display->display_options['relationships']['field_news_term_tid']['field'] = 'field_news_term_tid';
+  /* Field: Taxonomy term: Term image */
+  $handler->display->display_options['fields']['field_term_image']['id'] = 'field_term_image';
+  $handler->display->display_options['fields']['field_term_image']['table'] = 'field_data_field_term_image';
+  $handler->display->display_options['fields']['field_term_image']['field'] = 'field_term_image';
+  $handler->display->display_options['fields']['field_term_image']['relationship'] = 'field_news_term_tid';
+  $handler->display->display_options['fields']['field_term_image']['label'] = '';
+  $handler->display->display_options['fields']['field_term_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_term_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_term_image']['settings'] = array(
+    'image_style' => 'term_image_thumb',
+    'image_link' => 'content',
+  );
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -1001,7 +1046,109 @@ function amphome_str_views_default_views() {
   /* Display: Block - proj - DFS */
   $handler = $view->new_display('block', 'Block - proj - DFS', 'dfs');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Recent DFS News';
+  $handler->display->display_options['title'] = 'Detroit Future Schools News';
+  $handler->display->display_options['defaults']['css_class'] = FALSE;
+  $handler->display->display_options['css_class'] = 'project-news-block';
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '3';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['footer'] = FALSE;
+  /* Footer: Global: Unfiltered text */
+  $handler->display->display_options['footer']['area_text_custom']['id'] = 'area_text_custom';
+  $handler->display->display_options['footer']['area_text_custom']['table'] = 'views';
+  $handler->display->display_options['footer']['area_text_custom']['field'] = 'area_text_custom';
+  $handler->display->display_options['footer']['area_text_custom']['label'] = 'read more DFS link';
+  $handler->display->display_options['footer']['area_text_custom']['content'] = '<a href="/news/detroit-future-schools">More Detroit Future Schools News</a>';
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['filter_groups']['groups'] = array(
+    1 => 'AND',
+    2 => 'AND',
+  );
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'news_archive_item' => 'news_archive_item',
+    'news_item' => 'news_item',
+  );
+  $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Filter criterion: Content: Has taxonomy term */
+  $handler->display->display_options['filters']['tid']['id'] = 'tid';
+  $handler->display->display_options['filters']['tid']['table'] = 'taxonomy_index';
+  $handler->display->display_options['filters']['tid']['field'] = 'tid';
+  $handler->display->display_options['filters']['tid']['value'] = array(
+    817 => '817',
+  );
+  $handler->display->display_options['filters']['tid']['reduce_duplicates'] = TRUE;
+  $handler->display->display_options['filters']['tid']['type'] = 'select';
+  $handler->display->display_options['filters']['tid']['vocabulary'] = 'news';
+  $handler->display->display_options['filters']['tid']['hierarchy'] = 1;
+
+  /* Display: Block - AMC */
+  $handler = $view->new_display('block', 'Block - AMC', 'amc');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Allied Media Conference News';
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '3';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['footer'] = FALSE;
+  /* Footer: Global: Unfiltered text */
+  $handler->display->display_options['footer']['area_text_custom']['id'] = 'area_text_custom';
+  $handler->display->display_options['footer']['area_text_custom']['table'] = 'views';
+  $handler->display->display_options['footer']['area_text_custom']['field'] = 'area_text_custom';
+  $handler->display->display_options['footer']['area_text_custom']['label'] = 'read more ';
+  $handler->display->display_options['footer']['area_text_custom']['content'] = '<a href="/news/allied-media-conference">More Allied Media Conference news</a>';
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['filter_groups']['groups'] = array(
+    1 => 'AND',
+    2 => 'AND',
+  );
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'news_archive_item' => 'news_archive_item',
+    'news_item' => 'news_item',
+  );
+  $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Filter criterion: Content: Has taxonomy term */
+  $handler->display->display_options['filters']['tid']['id'] = 'tid';
+  $handler->display->display_options['filters']['tid']['table'] = 'taxonomy_index';
+  $handler->display->display_options['filters']['tid']['field'] = 'tid';
+  $handler->display->display_options['filters']['tid']['value'] = array(
+    2 => '2',
+  );
+  $handler->display->display_options['filters']['tid']['reduce_duplicates'] = TRUE;
+  $handler->display->display_options['filters']['tid']['type'] = 'select';
+  $handler->display->display_options['filters']['tid']['vocabulary'] = 'news';
+  $handler->display->display_options['filters']['tid']['hierarchy'] = 1;
+
+  /* Display: Block - proj - DFS */
+  $handler = $view->new_display('block', 'Block - proj - DFS', 'block_1');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Recent DFS News &hearts;';
   $handler->display->display_options['defaults']['css_class'] = FALSE;
   $handler->display->display_options['css_class'] = 'project-news-block';
   $handler->display->display_options['defaults']['pager'] = FALSE;
@@ -1049,56 +1196,6 @@ function amphome_str_views_default_views() {
   $handler->display->display_options['filters']['tid']['type'] = 'select';
   $handler->display->display_options['filters']['tid']['vocabulary'] = 'news';
   $handler->display->display_options['filters']['tid']['hierarchy'] = 1;
-
-  /* Display: Block - AMC */
-  $handler = $view->new_display('block', 'Block - AMC', 'amc');
-  $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Recent AMC News';
-  $handler->display->display_options['defaults']['pager'] = FALSE;
-  $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '3';
-  $handler->display->display_options['pager']['options']['offset'] = '0';
-  $handler->display->display_options['defaults']['footer'] = FALSE;
-  /* Footer: Global: Unfiltered text */
-  $handler->display->display_options['footer']['area_text_custom']['id'] = 'area_text_custom';
-  $handler->display->display_options['footer']['area_text_custom']['table'] = 'views';
-  $handler->display->display_options['footer']['area_text_custom']['field'] = 'area_text_custom';
-  $handler->display->display_options['footer']['area_text_custom']['label'] = 'read more AMC news';
-  $handler->display->display_options['footer']['area_text_custom']['content'] = '<a href="/news/allied-media-conference">Read more</a>';
-  $handler->display->display_options['defaults']['arguments'] = FALSE;
-  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
-  $handler->display->display_options['filter_groups']['groups'] = array(
-    1 => 'AND',
-    2 => 'AND',
-  );
-  $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Content: Published */
-  $handler->display->display_options['filters']['status']['id'] = 'status';
-  $handler->display->display_options['filters']['status']['table'] = 'node';
-  $handler->display->display_options['filters']['status']['field'] = 'status';
-  $handler->display->display_options['filters']['status']['value'] = 1;
-  $handler->display->display_options['filters']['status']['group'] = 1;
-  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
-  $handler->display->display_options['filters']['type']['id'] = 'type';
-  $handler->display->display_options['filters']['type']['table'] = 'node';
-  $handler->display->display_options['filters']['type']['field'] = 'type';
-  $handler->display->display_options['filters']['type']['value'] = array(
-    'news_archive_item' => 'news_archive_item',
-    'news_item' => 'news_item',
-  );
-  $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Content: Has taxonomy term */
-  $handler->display->display_options['filters']['tid']['id'] = 'tid';
-  $handler->display->display_options['filters']['tid']['table'] = 'taxonomy_index';
-  $handler->display->display_options['filters']['tid']['field'] = 'tid';
-  $handler->display->display_options['filters']['tid']['value'] = array(
-    2 => '2',
-  );
-  $handler->display->display_options['filters']['tid']['reduce_duplicates'] = TRUE;
-  $handler->display->display_options['filters']['tid']['type'] = 'select';
-  $handler->display->display_options['filters']['tid']['vocabulary'] = 'news';
-  $handler->display->display_options['filters']['tid']['hierarchy'] = 1;
   $translatables['project_news'] = array(
     t('Master'),
     t('AMP Blog'),
@@ -1116,16 +1213,19 @@ function amphome_str_views_default_views() {
     t('next ›'),
     t('last »'),
     t('image from field_news_lead_image'),
+    t('term from field_news_term'),
     t('Date (field_news_date)'),
     t('All'),
     t('Block - proj - DFS'),
-    t('Recent DFS News'),
+    t('Detroit Future Schools News'),
     t('read more DFS link'),
-    t('<a href="/news/detroit-future-schools">Read more</a>'),
+    t('<a href="/news/detroit-future-schools">More Detroit Future Schools News</a>'),
     t('Block - AMC'),
-    t('Recent AMC News'),
-    t('read more AMC news'),
-    t('<a href="/news/allied-media-conference">Read more</a>'),
+    t('Allied Media Conference News'),
+    t('read more '),
+    t('<a href="/news/allied-media-conference">More Allied Media Conference news</a>'),
+    t('Recent DFS News &hearts;'),
+    t('<a href="/news/detroit-future-schools">Read more</a>'),
   );
   $export['project_news'] = $view;
 

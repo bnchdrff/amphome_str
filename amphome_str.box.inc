@@ -52,8 +52,8 @@ function amphome_str_default_box() {
       'value' => '<div id="mc_embed_signup">
 <form action="http://alliedmedia.us7.list-manage2.com/subscribe/post?u=ed3193a97f901cbe49364e914&amp;id=e5f6bfebe1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 
-<input class="form-control form-text input-sm" type="email" value="" name="EMAIL" placeholder="email" id="mce-EMAIL">
-<input class="form-control form-text input-sm" type="text" value="" name="mce-MMERGE11" placeholder="zip code" id="mce-MMERGE11">
+<input class="form-control form-text input-sm" type="Email" value="" name="EMAIL" placeholder="Email" id="mce-EMAIL">
+<input class="form-control form-text input-sm" type="text" value="" name="MMERGE11" placeholder="Zip code" id="mce-MMERGE11">
 <input class="btn btn-sm btn-primary" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
 
 <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
@@ -65,6 +65,21 @@ function amphome_str_default_box() {
     'additional_classes' => 'small-box',
   );
   $export['amp_list_signup'] = $box;
+
+  $box = new stdClass();
+  $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
+  $box->api_version = 1;
+  $box->delta = 'blog_addthis';
+  $box->plugin_key = 'simple';
+  $box->title = '';
+  $box->description = '"add this" for blog';
+  $box->options = array(
+    'body' => array(
+      'value' => '<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-546b62de68c18e7f" async="async"></script>',
+      'format' => 'really_really_unfiltered',
+    ),
+  );
+  $export['blog_addthis'] = $box;
 
   $box = new stdClass();
   $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
@@ -99,13 +114,30 @@ Your contribution to Allied Media Projects is tax-deductible!
   $box->api_version = 1;
   $box->delta = 'flex_graphic_box';
   $box->plugin_key = 'simple';
-  $box->title = 'Flexible graphic area';
+  $box->title = '';
   $box->description = 'Flexible graphic area';
   $box->options = array(
     'body' => array(
-      'value' => 'hi',
-      'format' => 'unfiltered',
+      'value' => '<span class="sell">AMP produces the <br><a href="/amc" data-scrubber="amc">Allied Media Conference</a> <br>and supports <br><a href="/sponsored-projects" data-scrubber="sponsoredprojects">art / media / technology<br>projects. </a></span>
+
+<a href="/amc"><ul class="scrubber amc" data-scrubber="amc">
+  <li><img src="/sites/amphome-2015-v4.dev.altissima.theworkdept.com/themes/amphome/images/frontpage/amphome_circleimage_amc1.png"></li>
+  <li><img src="/sites/amphome-2015-v4.dev.altissima.theworkdept.com/themes/amphome/images/frontpage/amphome_circleimage_amc2.png"></li>
+  <li><img src="/sites/amphome-2015-v4.dev.altissima.theworkdept.com/themes/amphome/images/frontpage/amphome_circleimage_amc3.png"></li>
+</ul></a>
+
+<a href="/sponsored-projects"><ul class="scrubber sponsoredprojects" data-scrubber="sponsoredprojects">
+  <li><img src="/sites/amphome-2015-v4.dev.altissima.theworkdept.com/themes/amphome/images/frontpage/amphome_circleimage_sp1.png"></li>
+  <li><img src="/sites/amphome-2015-v4.dev.altissima.theworkdept.com/themes/amphome/images/frontpage/amphome_circleimage_sp2.png"></li>
+  <li><img src="/sites/amphome-2015-v4.dev.altissima.theworkdept.com/themes/amphome/images/frontpage/amphome_circleimage_sp3.png"></li>
+</ul></a>
+
+<div class="arrow amc"></div>
+<div class="arrow amp"></div>
+<div class="arrow sponsoredprojects"></div>',
+      'format' => 'really_really_unfiltered',
     ),
+    'additional_classes' => '',
   );
   $export['flex_graphic_box'] = $box;
 
@@ -265,13 +297,14 @@ Your contribution to Allied Media Projects is tax-deductible!
   $box->api_version = 1;
   $box->delta = 'storeitem1_box';
   $box->plugin_key = 'simple';
-  $box->title = 'Store item 1';
-  $box->description = 'Store item 1';
+  $box->title = '<none>';
+  $box->description = 'Home sidebar';
   $box->options = array(
     'body' => array(
-      'value' => 'hi1',
+      'value' => '<a href="/news/2014/05/09/apply-amp-camp-2014"><img src="/files/amp_camp_graphic-1_0.png"></a>',
       'format' => 'unfiltered',
     ),
+    'additional_classes' => '',
   );
   $export['storeitem1_box'] = $box;
 

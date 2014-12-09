@@ -74,6 +74,34 @@ function amphome_str_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
+  $context->name = 'blog';
+  $context->description = '';
+  $context->tag = '';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        'news/*' => 'news/*',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'boxes-blog_addthis' => array(
+          'module' => 'boxes',
+          'delta' => 'blog_addthis',
+          'region' => 'sidebar_second',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+  $export['blog'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
   $context->name = 'landing_pages';
   $context->description = '';
   $context->tag = '';
@@ -127,6 +155,24 @@ function amphome_str_context_default_contexts() {
           'delta' => 'amp_news-block_4',
           'region' => 'content',
           'weight' => '-10',
+        ),
+        'cck_blocks-field_news_lead_image' => array(
+          'module' => 'cck_blocks',
+          'delta' => 'field_news_lead_image',
+          'region' => 'sidebar_second',
+          'weight' => '-29',
+        ),
+        'cck_blocks-field_news_term' => array(
+          'module' => 'cck_blocks',
+          'delta' => 'field_news_term',
+          'region' => 'sidebar_second',
+          'weight' => '-27',
+        ),
+        'cck_blocks-field_news_tags' => array(
+          'module' => 'cck_blocks',
+          'delta' => 'field_news_tags',
+          'region' => 'sidebar_second',
+          'weight' => '-25',
         ),
       ),
     ),

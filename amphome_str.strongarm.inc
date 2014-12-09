@@ -118,17 +118,26 @@ function amphome_str_strongarm() {
       'cck_blocks' => array(
         'custom_settings' => TRUE,
       ),
+      'search_index' => array(
+        'custom_settings' => FALSE,
+      ),
+      'search_result' => array(
+        'custom_settings' => FALSE,
+      ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '3',
+          'weight' => '4',
         ),
         'path' => array(
-          'weight' => '8',
+          'weight' => '9',
         ),
         'redirect' => array(
-          'weight' => '7',
+          'weight' => '8',
         ),
         'metatags' => array(
           'weight' => '10',
@@ -230,6 +239,24 @@ function amphome_str_strongarm() {
     ),
   );
   $export['field_bundle_settings_node__webform'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'googleanalytics_account';
+  $strongarm->value = 'UA-25785884-5';
+  $export['googleanalytics_account'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'googleanalytics_roles';
+  $strongarm->value = array(
+    3 => '3',
+    1 => 0,
+    2 => 0,
+  );
+  $export['googleanalytics_roles'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
