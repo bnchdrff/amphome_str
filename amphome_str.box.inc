@@ -118,7 +118,7 @@ Your contribution to Allied Media Projects is tax-deductible!
   $box->description = 'Flexible graphic area';
   $box->options = array(
     'body' => array(
-      'value' => '<span class="sell">AMP produces the <br><a href="/amc" data-scrubber="amc">Allied Media Conference</a> <br>and supports <br><a href="/sponsored-projects" data-scrubber="sponsoredprojects">art / media / technology<br>projects.</a></span>
+      'value' => '<span class="sell">AMP produces the <br><a href="/amc" data-scrubber="amc">Allied Media Conference</a> <br>and supports <br><a href="/sponsored-projects" data-scrubber="sponsoredprojects">art / media / technology<br>projects. </a></span>
 
 <a href="/amc"><ul class="scrubber amc" data-scrubber="amc">
   <li><img src="/sites/amphome-2015-v4.dev.altissima.theworkdept.com/themes/amphome/images/frontpage/amphome_circleimage_amc1.png"></li>
