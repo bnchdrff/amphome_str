@@ -217,6 +217,25 @@ function amphome_str_menu_default_menu_links() {
     'customized' => 1,
     'parent_identifier' => 'main-menu_about:<nolink>',
   );
+  // Exported menu link: main-menu_conference-registration--housing-information:node/750
+  $menu_links['main-menu_conference-registration--housing-information:node/750'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/750',
+    'router_path' => 'node/%',
+    'link_title' => 'Conference Registration & Housing Information',
+    'options' => array(
+      'identifier' => 'main-menu_conference-registration--housing-information:node/750',
+      'attributes' => array(),
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -50,
+    'customized' => 1,
+    'parent_identifier' => 'main-menu_register:<nolink>',
+  );
   // Exported menu link: main-menu_contact:node/532
   $menu_links['main-menu_contact:node/532'] = array(
     'menu_name' => 'main-menu',
@@ -288,14 +307,14 @@ function amphome_str_menu_default_menu_links() {
     'customized' => 1,
     'parent_identifier' => 'main-menu_detroit-future-schools:node/738',
   );
-  // Exported menu link: main-menu_funding--financials:node/412
-  $menu_links['main-menu_funding--financials:node/412'] = array(
+  // Exported menu link: main-menu_financial-information:node/412
+  $menu_links['main-menu_financial-information:node/412'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'node/412',
     'router_path' => 'node/%',
-    'link_title' => 'Funding & Financials',
+    'link_title' => 'Financial Information',
     'options' => array(
-      'identifier' => 'main-menu_funding--financials:node/412',
+      'identifier' => 'main-menu_financial-information:node/412',
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -305,97 +324,6 @@ function amphome_str_menu_default_menu_links() {
     'weight' => -47,
     'customized' => 1,
     'parent_identifier' => 'main-menu_about:node/735',
-  );
-  // Exported menu link: main-menu_fundraise:node/752
-  $menu_links['main-menu_fundraise:node/752'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/752',
-    'router_path' => 'node/%',
-    'link_title' => 'Fundraise',
-    'options' => array(
-      'identifier' => 'main-menu_fundraise:node/752',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -49,
-    'customized' => 1,
-    'parent_identifier' => 'main-menu_participate:<nolink>',
-  );
-  // Exported menu link: main-menu_glossary:node/765
-  $menu_links['main-menu_glossary:node/765'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/765',
-    'router_path' => 'node/%',
-    'link_title' => 'Glossary',
-    'options' => array(
-      'identifier' => 'main-menu_glossary:node/765',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -47,
-    'customized' => 1,
-    'parent_identifier' => 'main-menu_about:<nolink>',
-  );
-  // Exported menu link: main-menu_how-we-organize-the-amc:node/764
-  $menu_links['main-menu_how-we-organize-the-amc:node/764'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/764',
-    'router_path' => 'node/%',
-    'link_title' => 'How We Organize the AMC',
-    'options' => array(
-      'identifier' => 'main-menu_how-we-organize-the-amc:node/764',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -48,
-    'customized' => 1,
-    'parent_identifier' => 'main-menu_about:<nolink>',
-  );
-  // Exported menu link: main-menu_how-we-organize:node/733
-  $menu_links['main-menu_how-we-organize:node/733'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/733',
-    'router_path' => 'node/%',
-    'link_title' => 'How We Organize',
-    'options' => array(
-      'identifier' => 'main-menu_how-we-organize:node/733',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -50,
-    'customized' => 1,
-    'parent_identifier' => 'main-menu_participate:<nolink>',
-  );
-  // Exported menu link: main-menu_june-18-21:node/750
-  $menu_links['main-menu_june-18-21:node/750'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/750',
-    'router_path' => 'node/%',
-    'link_title' => 'June 18-21',
-    'options' => array(
-      'identifier' => 'main-menu_june-18-21:node/750',
-      'attributes' => array(),
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -50,
-    'customized' => 1,
-    'parent_identifier' => 'main-menu_register:<nolink>',
   );
   // Exported menu link: main-menu_maps--transportation:node/756
   $menu_links['main-menu_maps--transportation:node/756'] = array(
@@ -450,6 +378,24 @@ function amphome_str_menu_default_menu_links() {
     'weight' => -48,
     'customized' => 1,
     'parent_identifier' => 'main-menu_program:<nolink>',
+  );
+  // Exported menu link: main-menu_organizing-process:node/733
+  $menu_links['main-menu_organizing-process:node/733'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/733',
+    'router_path' => 'node/%',
+    'link_title' => 'Organizing Process',
+    'options' => array(
+      'identifier' => 'main-menu_organizing-process:node/733',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -50,
+    'customized' => 1,
+    'parent_identifier' => 'main-menu_about:<nolink>',
   );
   // Exported menu link: main-menu_overview:node/769
   $menu_links['main-menu_overview:node/769'] = array(
@@ -529,24 +475,6 @@ function amphome_str_menu_default_menu_links() {
     'customized' => 1,
     'parent_identifier' => 'main-menu_attend:<nolink>',
   );
-  // Exported menu link: main-menu_places-to-stay:node/757
-  $menu_links['main-menu_places-to-stay:node/757'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/757',
-    'router_path' => 'node/%',
-    'link_title' => 'Places to Stay',
-    'options' => array(
-      'identifier' => 'main-menu_places-to-stay:node/757',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -49,
-    'customized' => 1,
-    'parent_identifier' => 'main-menu_attend:<nolink>',
-  );
   // Exported menu link: main-menu_previous-years:<nolink>
   $menu_links['main-menu_previous-years:<nolink>'] = array(
     'menu_name' => 'main-menu',
@@ -606,24 +534,6 @@ function amphome_str_menu_default_menu_links() {
     'weight' => -47,
     'customized' => 1,
     'parent_identifier' => 'main-menu_participate:<nolink>',
-  );
-  // Exported menu link: main-menu_reports:node/746
-  $menu_links['main-menu_reports:node/746'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/746',
-    'router_path' => 'node/%',
-    'link_title' => 'Reports',
-    'options' => array(
-      'identifier' => 'main-menu_reports:node/746',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -48,
-    'customized' => 1,
-    'parent_identifier' => 'main-menu_about:node/735',
   );
   // Exported menu link: main-menu_sessions:node/55
   $menu_links['main-menu_sessions:node/55'] = array(
@@ -753,22 +663,22 @@ function amphome_str_menu_default_menu_links() {
     'customized' => 1,
     'parent_identifier' => 'main-menu_program:<nolink>',
   );
-  // Exported menu link: main-menu_volunteer:node/754
-  $menu_links['main-menu_volunteer:node/754'] = array(
+  // Exported menu link: main-menu_volunteer:node/778
+  $menu_links['main-menu_volunteer:node/778'] = array(
     'menu_name' => 'main-menu',
-    'link_path' => 'node/754',
+    'link_path' => 'node/778',
     'router_path' => 'node/%',
     'link_title' => 'Volunteer',
     'options' => array(
-      'identifier' => 'main-menu_volunteer:node/754',
+      'identifier' => 'main-menu_volunteer:node/778',
     ),
     'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -44,
-    'customized' => 1,
+    'weight' => 27,
+    'customized' => 0,
     'parent_identifier' => 'main-menu_participate:<nolink>',
   );
   // Translatables
@@ -783,27 +693,22 @@ function amphome_str_menu_default_menu_links() {
   t('Blog');
   t('Childcare');
   t('Conference Mission');
+  t('Conference Registration & Housing Information');
   t('Contact');
   t('Detroit Future Schools');
   t('Donate');
-  t('Funding & Financials');
-  t('Fundraise');
-  t('Glossary');
-  t('How We Organize');
-  t('How We Organize the AMC');
-  t('June 18-21');
+  t('Financial Information');
   t('Maps & Transportation');
   t('Mission & Principles');
   t('Music');
+  t('Organizing Process');
   t('Overview');
   t('Participate');
   t('People');
   t('Places to Eat');
-  t('Places to Stay');
   t('Previous Years');
   t('Program');
   t('Promote');
-  t('Reports');
   t('Sessions');
   t('Sponsor');
   t('Sponsored Projects');
