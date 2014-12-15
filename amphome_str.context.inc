@@ -34,6 +34,9 @@ function amphome_str_context_default_contexts() {
         ),
       ),
     ),
+    'theme_html' => array(
+      'class' => 'section-amc',
+    ),
   );
   $context->condition_mode = 0;
   $export['amc'] = $context;
@@ -385,6 +388,27 @@ function amphome_str_context_default_contexts() {
   // Included for use with string extractors like potx.
   t('delta');
   $export['small_right_sidebar_layout'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'sponsoredprojects';
+  $context->description = '';
+  $context->tag = '';
+  $context->conditions = array(
+    'menu' => array(
+      'values' => array(
+        'node/737' => 'node/737',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'theme_html' => array(
+      'class' => 'section-sponsoredprojects',
+    ),
+  );
+  $context->condition_mode = 0;
+  $export['sponsoredprojects'] = $context;
 
   return $export;
 }

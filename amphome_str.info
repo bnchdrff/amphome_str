@@ -59,6 +59,7 @@ features[context][] = project_dfs
 features[context][] = secondarysidebar
 features[context][] = sitewide
 features[context][] = small_right_sidebar_layout
+features[context][] = sponsoredprojects
 features[ctools][] = boxes:box:1
 features[ctools][] = context:context:3
 features[ctools][] = page_manager:pages_default:1
