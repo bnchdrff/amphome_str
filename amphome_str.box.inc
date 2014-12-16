@@ -121,15 +121,15 @@ Your contribution to Allied Media Projects is tax-deductible!
       'value' => '<span class="sell">AMP produces the <br><a href="/amc" data-scrubber="amc">Allied Media Conference</a> <br>and supports <br><a href="/sponsored-projects" data-scrubber="sponsoredprojects">art / media / technology<br>projects. </a></span>
 
 <a href="/amc"><ul class="scrubber amc" data-scrubber="amc">
-  <li><img src="/sites/amphome-2015-v4.dev.altissima.theworkdept.com/themes/amphome/images/frontpage/amphome_circleimage_amc1.png"></li>
-  <li><img src="/sites/amphome-2015-v4.dev.altissima.theworkdept.com/themes/amphome/images/frontpage/amphome_circleimage_amc2.png"></li>
-  <li><img src="/sites/amphome-2015-v4.dev.altissima.theworkdept.com/themes/amphome/images/frontpage/amphome_circleimage_amc3.png"></li>
+  <li><img src="/sites/all/themes/amphome/images/frontpage/amphome_circleimage_amc1.png"></li>
+  <li><img src="/sites/all/themes/amphome/images/frontpage/amphome_circleimage_amc2.png"></li>
+  <li><img src="/sites/all/themes/amphome/images/frontpage/amphome_circleimage_amc3.png"></li>
 </ul></a>
 
 <a href="/sponsored-projects"><ul class="scrubber sponsoredprojects" data-scrubber="sponsoredprojects">
-  <li><img src="/sites/amphome-2015-v4.dev.altissima.theworkdept.com/themes/amphome/images/frontpage/amphome_circleimage_sp1.png"></li>
-  <li><img src="/sites/amphome-2015-v4.dev.altissima.theworkdept.com/themes/amphome/images/frontpage/amphome_circleimage_sp2.png"></li>
-  <li><img src="/sites/amphome-2015-v4.dev.altissima.theworkdept.com/themes/amphome/images/frontpage/amphome_circleimage_sp3.png"></li>
+  <li><img src="/sites/all/themes/amphome/images/frontpage/amphome_circleimage_sp1.png"></li>
+  <li><img src="/sites/all/themes/amphome/images/frontpage/amphome_circleimage_sp2.png"></li>
+  <li><img src="/sites/all/themes/amphome/images/frontpage/amphome_circleimage_sp3.png"></li>
 </ul></a>
 
 <div class="arrow amc"></div>

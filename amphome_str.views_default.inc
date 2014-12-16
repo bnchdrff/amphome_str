@@ -40,7 +40,7 @@ function amphome_str_views_default_views() {
       'class' => '',
     ),
   );
-  /* Relationship: Content: Lead Image (field_news_lead_image:fid) */
+  /* Relationship: Content: Lead image (field_news_lead_image:fid) */
   $handler->display->display_options['relationships']['field_news_lead_image_fid']['id'] = 'field_news_lead_image_fid';
   $handler->display->display_options['relationships']['field_news_lead_image_fid']['table'] = 'field_data_field_news_lead_image';
   $handler->display->display_options['relationships']['field_news_lead_image_fid']['field'] = 'field_news_lead_image_fid';
@@ -81,7 +81,7 @@ function amphome_str_views_default_views() {
     'multiple_to' => '',
     'show_repeat_rule' => 'show',
   );
-  /* Field: Content: Lead Image */
+  /* Field: Content: Lead image */
   $handler->display->display_options['fields']['field_news_lead_image']['id'] = 'field_news_lead_image';
   $handler->display->display_options['fields']['field_news_lead_image']['table'] = 'field_data_field_news_lead_image';
   $handler->display->display_options['fields']['field_news_lead_image']['field'] = 'field_news_lead_image';
@@ -158,7 +158,7 @@ function amphome_str_views_default_views() {
   $handler->display->display_options['row_options']['links'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Lead Image */
+  /* Field: Content: Lead image */
   $handler->display->display_options['fields']['field_news_lead_image']['id'] = 'field_news_lead_image';
   $handler->display->display_options['fields']['field_news_lead_image']['table'] = 'field_data_field_news_lead_image';
   $handler->display->display_options['fields']['field_news_lead_image']['field'] = 'field_news_lead_image';
@@ -353,7 +353,7 @@ function amphome_str_views_default_views() {
   );
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Lead Image */
+  /* Field: Content: Lead image */
   $handler->display->display_options['fields']['field_news_lead_image']['id'] = 'field_news_lead_image';
   $handler->display->display_options['fields']['field_news_lead_image']['table'] = 'field_data_field_news_lead_image';
   $handler->display->display_options['fields']['field_news_lead_image']['field'] = 'field_news_lead_image';
@@ -618,7 +618,7 @@ function amphome_str_views_default_views() {
     'multiple_to' => '',
     'show_repeat_rule' => 'show',
   );
-  /* Field: Content: Lead Image */
+  /* Field: Content: Lead image */
   $handler->display->display_options['fields']['field_news_lead_image']['id'] = 'field_news_lead_image';
   $handler->display->display_options['fields']['field_news_lead_image']['table'] = 'field_data_field_news_lead_image';
   $handler->display->display_options['fields']['field_news_lead_image']['field'] = 'field_news_lead_image';
@@ -677,7 +677,7 @@ function amphome_str_views_default_views() {
   $handler->display->display_options['fields']['field_news_term_1']['label'] = 'categoryurl';
   $handler->display->display_options['fields']['field_news_term_1']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_news_term_1']['alter']['text'] = 'http://alliedmedia.org/taxonomy/term/[field_news_term_1-tid]';
-  /* Field: Content: Lead Image */
+  /* Field: Content: Lead image */
   $handler->display->display_options['fields']['field_news_lead_image_2']['id'] = 'field_news_lead_image_2';
   $handler->display->display_options['fields']['field_news_lead_image_2']['table'] = 'field_data_field_news_lead_image';
   $handler->display->display_options['fields']['field_news_lead_image_2']['field'] = 'field_news_lead_image';
@@ -709,7 +709,7 @@ function amphome_str_views_default_views() {
   $handler->display->display_options['row_options']['links'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Lead Image */
+  /* Field: Content: Lead image */
   $handler->display->display_options['fields']['field_news_lead_image']['id'] = 'field_news_lead_image';
   $handler->display->display_options['fields']['field_news_lead_image']['table'] = 'field_data_field_news_lead_image';
   $handler->display->display_options['fields']['field_news_lead_image']['field'] = 'field_news_lead_image';
@@ -804,7 +804,7 @@ function amphome_str_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'node';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Lead Image */
+  /* Field: Content: Lead image */
   $handler->display->display_options['fields']['field_news_lead_image']['id'] = 'field_news_lead_image';
   $handler->display->display_options['fields']['field_news_lead_image']['table'] = 'field_data_field_news_lead_image';
   $handler->display->display_options['fields']['field_news_lead_image']['field'] = 'field_news_lead_image';
@@ -959,7 +959,7 @@ function amphome_str_views_default_views() {
   $handler->display->display_options['footer']['area_text_custom']['id'] = 'area_text_custom';
   $handler->display->display_options['footer']['area_text_custom']['table'] = 'views';
   $handler->display->display_options['footer']['area_text_custom']['field'] = 'area_text_custom';
-  /* Relationship: Content: Lead Image (field_news_lead_image:fid) */
+  /* Relationship: Content: Lead image (field_news_lead_image:fid) */
   $handler->display->display_options['relationships']['field_news_lead_image_fid']['id'] = 'field_news_lead_image_fid';
   $handler->display->display_options['relationships']['field_news_lead_image_fid']['table'] = 'field_data_field_news_lead_image';
   $handler->display->display_options['relationships']['field_news_lead_image_fid']['field'] = 'field_news_lead_image_fid';
