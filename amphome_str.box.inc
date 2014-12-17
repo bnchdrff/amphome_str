@@ -301,7 +301,9 @@ Your contribution to Allied Media Projects is tax-deductible!
   $box->description = 'Home sidebar';
   $box->options = array(
     'body' => array(
-      'value' => '<a href="/news/2014/05/09/apply-amp-camp-2014"><img src="/files/amp_camp_graphic-1_0.png"></a>',
+      'value' => '<a href="/amc/register">
+<img src="/files/register_banner2.png">
+</a>',
       'format' => 'unfiltered',
     ),
     'additional_classes' => '',

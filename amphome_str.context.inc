@@ -87,18 +87,7 @@ function amphome_str_context_default_contexts() {
       ),
     ),
   );
-  $context->reactions = array(
-    'block' => array(
-      'blocks' => array(
-        'boxes-blog_addthis' => array(
-          'module' => 'boxes',
-          'delta' => 'blog_addthis',
-          'region' => 'sidebar_second',
-          'weight' => '-10',
-        ),
-      ),
-    ),
-  );
+  $context->reactions = array();
   $context->condition_mode = 0;
   $export['blog'] = $context;
 
