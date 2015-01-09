@@ -617,7 +617,7 @@ function amphome_str_strongarm() {
     'bootstrap_popover_enabled' => 1,
     'bootstrap_popover_animation' => 1,
     'bootstrap_popover_html' => 0,
-    'bootstrap_popover_placement' => 'right',
+    'bootstrap_popover_placement' => 'auto left',
     'bootstrap_popover_selector' => '',
     'bootstrap_popover_trigger' => array(
       'click' => 'click',

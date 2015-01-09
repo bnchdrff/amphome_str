@@ -127,7 +127,7 @@ Your contribution to Allied Media Projects is tax-deductible!
 </ul></a>
 
 <a href="/sponsored-projects"><ul class="scrubber sponsoredprojects" data-scrubber="sponsoredprojects">
-  <li><img src="/sites/all/themes/amphome/images/frontpage/amphome_circleimage_sp1.png"></li>
+<li><img src="/sites/tmpstage.dev.altissima.theworkdept.com/files/homepage-sp-image.png"></li>
   <li><img src="/sites/all/themes/amphome/images/frontpage/amphome_circleimage_sp2.png"></li>
   <li><img src="/sites/all/themes/amphome/images/frontpage/amphome_circleimage_sp3.png"></li>
 </ul></a>

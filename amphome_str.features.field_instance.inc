@@ -621,10 +621,9 @@ function amphome_str_field_default_field_instances() {
         'weight' => 3,
       ),
       'default' => array(
-        'label' => 'above',
-        'module' => 'file',
+        'label' => 'hidden',
         'settings' => array(),
-        'type' => 'file_default',
+        'type' => 'hidden',
         'weight' => 1,
       ),
       'teaser' => array(
