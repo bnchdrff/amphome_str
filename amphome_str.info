@@ -4,6 +4,7 @@ package = Features
 version = 7.x-1.0
 project = amphome_str
 dependencies[] = boxes
+dependencies[] = bueditor
 dependencies[] = cck_blocks
 dependencies[] = context
 dependencies[] = ctools
