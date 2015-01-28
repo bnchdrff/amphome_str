@@ -114,6 +114,7 @@ features[filter][] = plain_text
 features[filter][] = really_really_unfiltered
 features[filter][] = unfiltered
 features[filter][] = whatever_you_need
+features[image][] = blog_sq_med
 features[image][] = intro_extrawide
 features[image][] = leadimage_400w
 features[image][] = leadimage_505w

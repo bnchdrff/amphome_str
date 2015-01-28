@@ -38,6 +38,29 @@ function amphome_str_views_api($module = NULL, $api = NULL) {
 function amphome_str_image_default_styles() {
   $styles = array();
 
+  // Exported image style: blog_sq_med.
+  $styles['blog_sq_med'] = array(
+    'name' => 'blog_sq_med',
+    'label' => 'blog_sq_med',
+    'effects' => array(
+      10 => array(
+        'label' => 'Scale and Smart Crop',
+        'help' => 'Similar to "Scale And Crop", but preserves the portion of the image with the most entropy.',
+        'effect callback' => 'smartcrop_scale_effect',
+        'form callback' => 'image_scale_form',
+        'summary theme' => 'image_scale_summary',
+        'module' => 'smartcrop',
+        'name' => 'smartcrop_scale_and_crop',
+        'data' => array(
+          'width' => 260,
+          'height' => 260,
+          'upscale' => 1,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   // Exported image style: intro_extrawide.
   $styles['intro_extrawide'] = array(
     'name' => 'intro_extrawide',
