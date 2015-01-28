@@ -974,6 +974,66 @@ function amphome_str_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-page-field_background_image'
+  $field_instances['node-page-field_background_image'] = array(
+    'bundle' => 'page',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'cck_blocks' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'backgroundfield',
+        'settings' => array(),
+        'type' => 'backgroundfield_formatter',
+        'weight' => 5,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_background_image',
+    'label' => 'Background image',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => '',
+      'css_attachment' => 'scroll',
+      'css_h_position' => 'left',
+      'css_important' => 1,
+      'css_repeat' => 'repeat',
+      'css_selector' => 'body',
+      'css_v_position' => 'top',
+      'default_image' => 0,
+      'file_directory' => '',
+      'file_extensions' => 'png gif jpg jpeg',
+      'image_style' => 'no_style',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'title_field' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'backgroundfield',
+      'settings' => array(
+        'preview_image_style' => 'medium_thumb',
+        'progress_indicator' => '',
+      ),
+      'type' => 'backgroundfield_widget',
+      'weight' => 13,
+    ),
+  );
+
   // Exported field_instance: 'node-page-field_files'
   $field_instances['node-page-field_files'] = array(
     'bundle' => 'page',
@@ -990,7 +1050,7 @@ function amphome_str_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 1,
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1037,7 +1097,7 @@ function amphome_str_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 2,
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1094,7 +1154,7 @@ function amphome_str_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 3,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1270,6 +1330,7 @@ function amphome_str_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Authors');
+  t('Background image');
   t('Body');
   t('Category');
   t('Date');

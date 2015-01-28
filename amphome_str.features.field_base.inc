@@ -74,6 +74,33 @@ function amphome_str_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
+  // Exported field_base: 'field_background_image'
+  $field_bases['field_background_image'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_background_image',
+    'foreign keys' => array(
+      'file_managed' => array(
+        'columns' => array(
+          'fid' => 'fid',
+        ),
+        'table' => 'file_managed',
+      ),
+    ),
+    'global_block_settings' => 1,
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'backgroundfield',
+    'settings' => array(
+      'default_image' => 0,
+      'uri_scheme' => 'public',
+    ),
+    'translatable' => 0,
+    'type' => 'backgroundfield',
+  );
+
   // Exported field_base: 'field_files'
   $field_bases['field_files'] = array(
     'active' => 1,
