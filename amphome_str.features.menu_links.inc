@@ -376,27 +376,6 @@ function amphome_str_menu_default_menu_links() {
     'customized' => 1,
     'parent_identifier' => 'main-menu_about:<nolink>',
   );
-  // Exported menu link: main-menu_overview:node/769
-  $menu_links['main-menu_overview:node/769'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/769',
-    'router_path' => 'node/%',
-    'link_title' => 'Overview',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-      'identifier' => 'main-menu_overview:node/769',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => 0,
-    'customized' => 1,
-    'parent_identifier' => 'main-menu_complex-movements:node/769',
-  );
   // Exported menu link: main-menu_participate:<nolink>
   $menu_links['main-menu_participate:<nolink>'] = array(
     'menu_name' => 'main-menu',
@@ -576,9 +555,7 @@ function amphome_str_menu_default_menu_links() {
     'router_path' => 'node/%',
     'link_title' => 'Sponsored Projects',
     'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
+      'attributes' => array(),
       'identifier' => 'main-menu_sponsored-projects:node/737',
     ),
     'module' => 'menu',
@@ -655,29 +632,11 @@ function amphome_str_menu_default_menu_links() {
     'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
-    'has_children' => 1,
+    'has_children' => 0,
     'expanded' => 0,
     'weight' => -49,
     'customized' => 1,
     'parent_identifier' => 'main-menu_program:<nolink>',
-  );
-  // Exported menu link: main-menu_volunteer:node/778
-  $menu_links['main-menu_volunteer:node/778'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/778',
-    'router_path' => 'node/%',
-    'link_title' => 'Volunteer',
-    'options' => array(
-      'identifier' => 'main-menu_volunteer:node/778',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => 27,
-    'customized' => 0,
-    'parent_identifier' => 'main-menu_participate:<nolink>',
   );
   // Translatables
   // Included for use with string extractors like potx.
@@ -699,7 +658,6 @@ function amphome_str_menu_default_menu_links() {
   t('Music');
   t('Network Principles');
   t('Organizing Process');
-  t('Overview');
   t('Participate');
   t('People');
   t('Places to Eat');
@@ -714,7 +672,6 @@ function amphome_str_menu_default_menu_links() {
   t('Table');
   t('Tools & Resources');
   t('Tracks, Practice Spaces, Network Gatherings');
-  t('Volunteer');
 
 
   return $menu_links;

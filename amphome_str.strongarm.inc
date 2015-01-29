@@ -570,16 +570,15 @@ function amphome_str_strongarm() {
     'toggle_node_user_picture' => 1,
     'toggle_comment_user_picture' => 1,
     'toggle_comment_user_verification' => 1,
-    'toggle_favicon' => 0,
+    'toggle_favicon' => 1,
     'toggle_main_menu' => 1,
     'toggle_secondary_menu' => 0,
     'default_logo' => 1,
     'logo_path' => '',
     'logo_upload' => '',
-    'default_favicon' => 1,
-    'favicon_path' => '',
-    'favicon_upload' => '',
-    'global__active_tab' => 'edit-theme-settings',
+    'default_favicon' => 0,
+    'favicon_path' => 'public://lg_unicon_0_0_0.png',
+    'global__active_tab' => 'edit-favicon',
     'bootstrap__active_tab' => 'edit-general',
     'bootstrap_button_size' => '',
     'bootstrap_button_colorize' => 1,
@@ -647,6 +646,7 @@ function amphome_str_strongarm() {
     'bootstrap_cdn' => '',
     'bootstrap_bootswatch' => '',
     'bootstrap_toggle_jquery_error' => 0,
+    'favicon_mimetype' => 'image/png',
   );
   $export['theme_amphome_settings'] = $strongarm;
 

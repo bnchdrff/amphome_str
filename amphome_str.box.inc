@@ -90,22 +90,10 @@ function amphome_str_default_box() {
   $box->description = 'Contact Quick Links';
   $box->options = array(
     'body' => array(
-      'value' => '<a href="http://amc.alliedmedia.org/amc2012/about/frequently-asked-questions">Read some FAQs about the Allied Media Conference</a>.
-
-Contact us through the form or leave us a voicemail at: (313) 718-2267 
-
-You can send postal mail, checks, and gifts (we like small, original works of art and books of history) to:
-
-<b>Allied Media Projects
-4126 Third St.
-Detroit, MI 48201</b>
-
-Your contribution to Allied Media Projects is tax-deductible!
-
-<p><b>You can also donate online here...</b></p>
-<a class="donate-button" href="https://app.moonclerk.com/pay/6cstgbo9tj">DONATE</a>',
+      'value' => '',
       'format' => 'unfiltered',
     ),
+    'additional_classes' => '',
   );
   $export['contact_quick_links'] = $box;
 
@@ -122,14 +110,19 @@ Your contribution to Allied Media Projects is tax-deductible!
 
 <a href="/amc"><ul class="scrubber amc" data-scrubber="amc">
   <li><img src="/sites/all/themes/amphome/images/frontpage/amphome_circleimage_amc1.png"></li>
-  <li><img src="/sites/all/themes/amphome/images/frontpage/amphome_circleimage_amc2.png"></li>
+  <li><img src="/sites/tmpstage.dev.altissima.theworkdept.com/files/amphome_circleimage_amc.png"></li>
+<li><img src="/sites/tmpstage.dev.altissima.theworkdept.com/files/amphome_circleimage_amcnight.png"></li>
   <li><img src="/sites/all/themes/amphome/images/frontpage/amphome_circleimage_amc3.png"></li>
+ <li><img src="/sites/all/themes/amphome/images/frontpage/amphome_circleimage_amc2.png"></li>
 </ul></a>
 
 <a href="/sponsored-projects"><ul class="scrubber sponsoredprojects" data-scrubber="sponsoredprojects">
-<li><img src="/sites/tmpstage.dev.altissima.theworkdept.com/files/homepage-sp-image.png"></li>
   <li><img src="/sites/all/themes/amphome/images/frontpage/amphome_circleimage_sp2.png"></li>
   <li><img src="/sites/all/themes/amphome/images/frontpage/amphome_circleimage_sp3.png"></li>
+ <li><img src="/sites/tmpstage.dev.altissima.theworkdept.com/files/maracuyeahsphomepage.png"></li>
+ <li><img src="/sites/tmpstage.dev.altissima.theworkdept.com/files/transtechsp_1.png"></li>
+ <li><img src="/sites/tmpstage.dev.altissima.theworkdept.com/files/sp-circle-image.png"></li>
+<li><img src="/sites/tmpstage.dev.altissima.theworkdept.com/files/homepage-sp-image.png"></li>
 </ul></a>
 
 <div class="arrow amc"></div>

@@ -238,6 +238,96 @@ function amphome_str_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
+  $context->name = 'project_amp-camp';
+  $context->description = '';
+  $context->tag = '';
+  $context->conditions = array(
+    'menu' => array(
+      'values' => array(
+        'node/835' => 'node/835',
+        'node/836' => 'node/836',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views-project_news-block_2' => array(
+          'module' => 'views',
+          'delta' => 'project_news-block_2',
+          'region' => 'sidebar_second',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+  $export['project_amp-camp'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'project_co_open';
+  $context->description = '';
+  $context->tag = '';
+  $context->conditions = array(
+    'menu' => array(
+      'values' => array(
+        'node/843' => 'node/843',
+        'node/860' => 'node/860',
+      ),
+    ),
+  );
+  $context->reactions = array();
+  $context->condition_mode = 0;
+  $export['project_co_open'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'project_detroit_community_technology_project';
+  $context->description = '';
+  $context->tag = '';
+  $context->conditions = array(
+    'menu' => array(
+      'values' => array(
+        'node/837' => 'node/837',
+        'node/838' => 'node/838',
+        'node/840' => 'node/840',
+        'node/841' => 'node/841',
+      ),
+    ),
+  );
+  $context->reactions = array();
+  $context->condition_mode = 0;
+  $export['project_detroit_community_technology_project'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'project_detroit_digital_justice_coalition';
+  $context->description = '';
+  $context->tag = '';
+  $context->conditions = array(
+    'menu' => array(
+      'values' => array(
+        'node/790' => 'node/790',
+        'node/791' => 'node/791',
+        'node/796' => 'node/796',
+        'node/797' => 'node/797',
+        'node/798' => 'node/798',
+        'node/799' => 'node/799',
+        'node/839' => 'node/839',
+      ),
+    ),
+  );
+  $context->reactions = array();
+  $context->condition_mode = 0;
+  $export['project_detroit_digital_justice_coalition'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
   $context->name = 'project_dfs';
   $context->description = '';
   $context->tag = '';

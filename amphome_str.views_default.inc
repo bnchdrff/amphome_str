@@ -22,7 +22,7 @@ function amphome_str_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'AMP Blog';
+  $handler->display->display_options['title'] = 'Blog';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -858,7 +858,7 @@ function amphome_str_views_default_views() {
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   $translatables['amp_news'] = array(
     t('Master'),
-    t('AMP Blog'),
+    t('Blog'),
     t('more'),
     t('Apply'),
     t('Reset'),
@@ -918,7 +918,7 @@ function amphome_str_views_default_views() {
   $view->description = '';
   $view->tag = 'default';
   $view->base_table = 'node';
-  $view->human_name = 'project news';
+  $view->human_name = 'Project news';
   $view->core = 7;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
@@ -1027,8 +1027,8 @@ function amphome_str_views_default_views() {
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
 
-  /* Display: Block - proj - DFS */
-  $handler = $view->new_display('block', 'Block - proj - DFS', 'dfs');
+  /* Display: Block - DFS */
+  $handler = $view->new_display('block', 'Block - DFS', 'dfs');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Detroit Future Schools News';
   $handler->display->display_options['defaults']['css_class'] = FALSE;
@@ -1129,10 +1129,10 @@ function amphome_str_views_default_views() {
   $handler->display->display_options['filters']['tid']['vocabulary'] = 'news';
   $handler->display->display_options['filters']['tid']['hierarchy'] = 1;
 
-  /* Display: Block - proj - DFS */
-  $handler = $view->new_display('block', 'Block - proj - DFS', 'block_1');
+  /* Display: Block - Co.Open */
+  $handler = $view->new_display('block', 'Block - Co.Open', 'block_1');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Recent DFS News &hearts;';
+  $handler->display->display_options['title'] = 'Co.Open News';
   $handler->display->display_options['defaults']['css_class'] = FALSE;
   $handler->display->display_options['css_class'] = 'project-news-block';
   $handler->display->display_options['defaults']['pager'] = FALSE;
@@ -1180,6 +1180,99 @@ function amphome_str_views_default_views() {
   $handler->display->display_options['filters']['tid']['type'] = 'select';
   $handler->display->display_options['filters']['tid']['vocabulary'] = 'news';
   $handler->display->display_options['filters']['tid']['hierarchy'] = 1;
+
+  /* Display: Block - AMP Camp */
+  $handler = $view->new_display('block', 'Block - AMP Camp', 'block_2');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'AMP Camp News';
+  $handler->display->display_options['defaults']['css_class'] = FALSE;
+  $handler->display->display_options['css_class'] = 'project-news-block';
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '3';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['footer'] = FALSE;
+  /* Footer: Global: Unfiltered text */
+  $handler->display->display_options['footer']['area_text_custom']['id'] = 'area_text_custom';
+  $handler->display->display_options['footer']['area_text_custom']['table'] = 'views';
+  $handler->display->display_options['footer']['area_text_custom']['field'] = 'area_text_custom';
+  $handler->display->display_options['footer']['area_text_custom']['label'] = 'read more DFS link';
+  $handler->display->display_options['footer']['area_text_custom']['content'] = '<a href="/news/detroit-future-schools">More AMP Camp News</a>';
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['filter_groups']['groups'] = array(
+    1 => 'AND',
+    2 => 'AND',
+  );
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'news_archive_item' => 'news_archive_item',
+    'news_item' => 'news_item',
+  );
+  $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Filter criterion: Content: Has taxonomy term */
+  $handler->display->display_options['filters']['tid']['id'] = 'tid';
+  $handler->display->display_options['filters']['tid']['table'] = 'taxonomy_index';
+  $handler->display->display_options['filters']['tid']['field'] = 'tid';
+  $handler->display->display_options['filters']['tid']['value'] = array(
+    941 => '941',
+  );
+  $handler->display->display_options['filters']['tid']['reduce_duplicates'] = TRUE;
+  $handler->display->display_options['filters']['tid']['type'] = 'select';
+  $handler->display->display_options['filters']['tid']['vocabulary'] = 'news';
+  $handler->display->display_options['filters']['tid']['hierarchy'] = 1;
+
+  /* Display: Block - Detroit Community Technology Project */
+  $handler = $view->new_display('block', 'Block - Detroit Community Technology Project', 'block_3');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'AMP Camp News';
+  $handler->display->display_options['defaults']['css_class'] = FALSE;
+  $handler->display->display_options['css_class'] = 'project-news-block';
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '3';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['footer'] = FALSE;
+  /* Footer: Global: Unfiltered text */
+  $handler->display->display_options['footer']['area_text_custom']['id'] = 'area_text_custom';
+  $handler->display->display_options['footer']['area_text_custom']['table'] = 'views';
+  $handler->display->display_options['footer']['area_text_custom']['field'] = 'area_text_custom';
+  $handler->display->display_options['footer']['area_text_custom']['label'] = 'read more DFS link';
+  $handler->display->display_options['footer']['area_text_custom']['content'] = '<a href="/news/detroit-future-schools">More Detroit Community Technology Project news</a>';
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['filter_groups']['groups'] = array(
+    1 => 'AND',
+    2 => 'AND',
+  );
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'news_archive_item' => 'news_archive_item',
+    'news_item' => 'news_item',
+  );
+  $handler->display->display_options['filters']['type']['group'] = 1;
   $translatables['project_news'] = array(
     t('Master'),
     t('AMP Blog'),
@@ -1199,7 +1292,7 @@ function amphome_str_views_default_views() {
     t('image from field_news_lead_image'),
     t('Date (field_news_date)'),
     t('All'),
-    t('Block - proj - DFS'),
+    t('Block - DFS'),
     t('Detroit Future Schools News'),
     t('read more DFS link'),
     t('<a href="/news/detroit-future-schools">More Detroit Future Schools News</a>'),
@@ -1207,8 +1300,14 @@ function amphome_str_views_default_views() {
     t('Allied Media Conference News'),
     t('read more '),
     t('<a href="/news/allied-media-conference">More Allied Media Conference news</a>'),
-    t('Recent DFS News &hearts;'),
+    t('Block - Co.Open'),
+    t('Co.Open News'),
     t('<a href="/news/detroit-future-schools">Read more</a>'),
+    t('Block - AMP Camp'),
+    t('AMP Camp News'),
+    t('<a href="/news/detroit-future-schools">More AMP Camp News</a>'),
+    t('Block - Detroit Community Technology Project'),
+    t('<a href="/news/detroit-future-schools">More Detroit Community Technology Project news</a>'),
   );
   $export['project_news'] = $view;
 
