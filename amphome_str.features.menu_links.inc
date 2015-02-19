@@ -246,7 +246,7 @@ function amphome_str_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -48,
+    'weight' => -45,
     'customized' => 1,
     'parent_identifier' => 'main-menu_detroit-future-schools:node/738',
   );
@@ -282,7 +282,7 @@ function amphome_str_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -47,
+    'weight' => -46,
     'customized' => 1,
     'parent_identifier' => 'main-menu_detroit-future-schools:node/738',
   );
@@ -415,6 +415,25 @@ function amphome_str_menu_default_menu_links() {
     'customized' => 1,
     'parent_identifier' => 'main-menu_about:node/735',
   );
+  // Exported menu link: main-menu_people:node/739
+  $menu_links['main-menu_people:node/739'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/739',
+    'router_path' => 'node/%',
+    'link_title' => 'People',
+    'options' => array(
+      'identifier' => 'main-menu_people:node/739',
+      'attributes' => array(),
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -47,
+    'customized' => 1,
+    'parent_identifier' => 'main-menu_detroit-future-schools:node/738',
+  );
   // Exported menu link: main-menu_places-to-eat:node/758
   $menu_links['main-menu_places-to-eat:node/758'] = array(
     'menu_name' => 'main-menu',
@@ -512,24 +531,6 @@ function amphome_str_menu_default_menu_links() {
     'customized' => 1,
     'parent_identifier' => 'main-menu_attend:<nolink>',
   );
-  // Exported menu link: main-menu_sessions:node/55
-  $menu_links['main-menu_sessions:node/55'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/55',
-    'router_path' => 'node/%',
-    'link_title' => 'Sessions',
-    'options' => array(
-      'identifier' => 'main-menu_sessions:node/55',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -48,
-    'customized' => 1,
-    'parent_identifier' => 'main-menu_program:<nolink>',
-  );
   // Exported menu link: main-menu_sponsor:node/745
   $menu_links['main-menu_sponsor:node/745'] = array(
     'menu_name' => 'main-menu',
@@ -565,24 +566,6 @@ function amphome_str_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -48,
     'customized' => 1,
-  );
-  // Exported menu link: main-menu_staff:node/739
-  $menu_links['main-menu_staff:node/739'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/739',
-    'router_path' => 'node/%',
-    'link_title' => 'Staff',
-    'options' => array(
-      'identifier' => 'main-menu_staff:node/739',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -49,
-    'customized' => 1,
-    'parent_identifier' => 'main-menu_detroit-future-schools:node/738',
   );
   // Exported menu link: main-menu_table:node/755
   $menu_links['main-menu_table:node/755'] = array(
@@ -665,10 +648,8 @@ function amphome_str_menu_default_menu_links() {
   t('Program');
   t('Promote');
   t('Registration & Housing');
-  t('Sessions');
   t('Sponsor');
   t('Sponsored Projects');
-  t('Staff');
   t('Table');
   t('Tools & Resources');
   t('Tracks, Practice Spaces, Network Gatherings');

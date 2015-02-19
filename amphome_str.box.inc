@@ -106,7 +106,7 @@ function amphome_str_default_box() {
   $box->description = 'Flexible graphic area';
   $box->options = array(
     'body' => array(
-      'value' => '<span class="sell"><a href="/about">AMP</a> produces the <br><a href="/amc" data-scrubber="amc">Allied Media Conference</a> <br>and supports <br><a href="/sponsored-projects" data-scrubber="sponsoredprojects">art / media / technology<br>projects. </a></span>
+      'value' => '<span class="sell"><a href="/about">AMP</a> produces the <br><a href="/amc" data-scrubber="amc">Allied Media Conference</a> <br>and supports <br><a href="/sponsored-projects" data-scrubber="sponsoredprojects">art, media, and technology<br>projects. </a></span>
 
 <a href="/amc"><ul class="scrubber amc" data-scrubber="amc">
   <li><img src="/sites/all/themes/amphome/images/frontpage/amphome_circleimage_amc1.png"></li>
@@ -294,9 +294,11 @@ function amphome_str_default_box() {
   $box->description = 'Home sidebar';
   $box->options = array(
     'body' => array(
-      'value' => '<a href="/amc/register">
-<img src="/files/register_banner2.png">
-</a>',
+      'value' => '<a href="/news/2015/01/23/propose-session-amc2015">
+<img src="/files/amc-sidebar-banner.png">
+</a>
+
+',
       'format' => 'unfiltered',
     ),
     'additional_classes' => '',

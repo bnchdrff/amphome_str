@@ -278,7 +278,18 @@ function amphome_str_context_default_contexts() {
       ),
     ),
   );
-  $context->reactions = array();
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views-project_news-block_1' => array(
+          'module' => 'views',
+          'delta' => 'project_news-block_1',
+          'region' => 'sidebar_second',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
   $context->condition_mode = 0;
   $export['project_co_open'] = $context;
 
@@ -298,7 +309,18 @@ function amphome_str_context_default_contexts() {
       ),
     ),
   );
-  $context->reactions = array();
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views-project_news-block_3' => array(
+          'module' => 'views',
+          'delta' => 'project_news-block_3',
+          'region' => 'sidebar_second',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
   $context->condition_mode = 0;
   $export['project_detroit_community_technology_project'] = $context;
 
@@ -321,7 +343,18 @@ function amphome_str_context_default_contexts() {
       ),
     ),
   );
-  $context->reactions = array();
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views-project_news-block_4' => array(
+          'module' => 'views',
+          'delta' => 'project_news-block_4',
+          'region' => 'sidebar_second',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
   $context->condition_mode = 0;
   $export['project_detroit_digital_justice_coalition'] = $context;
 
@@ -367,6 +400,7 @@ function amphome_str_context_default_contexts() {
     'path' => array(
       'values' => array(
         '~sponsored-projects' => '~sponsored-projects',
+        '~amc/sessions' => '~amc/sessions',
       ),
     ),
   );
